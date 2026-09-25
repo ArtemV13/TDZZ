@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Редактор цен — Зерно Заволжья</title>
+<link rel="icon" href="../assets/logo-symbol.svg" type="image/svg+xml">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="top">
+  <div class="top__brand"><img src="../assets/logo-symbol.svg" alt="" width="30" height="30"><b>Зерно Заволжья</b><span>редактор закупочных цен</span></div>
+  <div class="top__actions">
+    <label class="pw"><span>Пароль</span><input type="password" id="password" autocomplete="current-password" placeholder="из api/config.php"></label>
+    <button class="btn" id="btnLoad" type="button">Загрузить с сайта</button>
+    <button class="btn btn--primary" id="btnSave" type="button" disabled>Сохранить на сайт</button>
+  </div>
+</header>
+
+<div class="notice" id="notice" hidden></div>
+
+<main class="wrap" id="app" hidden>
+  <section class="card">
+    <div class="card__head"><h2>Общее</h2></div>
+    <div class="grid3">
+      <label>Главная страница<select id="fMode" class="input"><option value="quiz">Квиз «Продать зерно за 5 вопросов»</option><option value="passport">«Оцените партию за 60 секунд» (ползунки качества)</option><option value="prices">Таблица закупочных цен</option></select></label>
+      <label>Сезон (для карточки «Закупаем сейчас»)<input id="fSeason" placeholder="2026/27"></label>
+      <label>Дата прайса<input type="date" id="fUpdated"></label>
+      <label>НДС, %<input type="number" id="fVat" min="0" max="30" step="1"></label>
+      <label>Базис (RU / EN)<span class="pair"><input id="fBasisRu"><input id="fBasisEn"></span></label>
+    </div>
+    <p class="hint">Цены везде указываются в рублях за тонну <b>без НДС</b>. Пустая ячейка = «По согласованию». Изменения попадают на сайт только после нажатия «Сохранить на сайт».</p>
+  </section>
+
+  <section class="card">
+    <div class="card__head"><h2>«Закупаем сегодня» — карточка на первом экране</h2><button class="btn btn--small" id="btnAddFeatured" type="button">+ строка</button></div>
+    <table class="tbl" id="featured">
+      <thead><tr><th>Название (RU)</th><th>Название (EN)</th><th>Подпись (RU)</th><th>Подпись (EN)</th><th class="num">Цена, ₽/т</th><th></th></tr></thead>
+      <tbody></tbody>
+    </table>
+    <p class="hint">Обычно 3 строки. Подпись — элеватор и базис, например «Заготзерно · CPT».</p>
+  </section>
+
+  <section class="card">
+    <div class="card__head">
+      <h2>Прайс по элеваторам</h2>
+      <div class="tabs" id="cropTabs"></div>
+    </div>
+    <div class="toolbar">
+      <span class="toolbar__label">Массово для этой культуры:</span>
+      <input type="number" id="bulkDelta" placeholder="±₽" step="50" style="width:110px">
+      <button class="btn btn--small" id="btnBulk" type="button">Применить ко всем ценам</button>
+      <span class="sep"></span>
+      <button class="btn btn--small" id="btnAddRow" type="button">+ строка качества</button>
+      <button class="btn btn--small" id="btnElevators" type="button">Элеваторы…</button>
+    </div>
+    <div class="scroll"><table class="tbl tbl--matrix" id="matrix"><thead></thead><tbody></tbody></table></div>
+    <p class="hint">Клик по названию качества — редактировать название, подпись и требования (RU/EN). Пустое поле = «По согласованию».</p>
+  </section>
+
+  <section class="card">
+    <div class="card__head"><h2>Файл</h2></div>
+    <div class="toolbar">
+      <button class="btn btn--small" id="btnDownload" type="button">Скачать prices.json</button>
+      <label class="btn btn--small">Загрузить из файла<input type="file" id="fileImport" accept="application/json" hidden></label>
+      <span class="hint">Резервный способ: если сервер не отвечает, скачайте файл и загрузите его по FTP в папку <code>data/</code>.</span>
+    </div>
+  </section>
+</main>
+
+<!-- диалог: строка качества -->
+<dialog id="dlgRow">
+  <form method="dialog" class="dlg">
+    <h3>Строка качества</h3>
+    <label>Название (RU)<input id="rName"></label>
+    <label>Название (EN)<input id="rNameEn"></label>
+    <label>Подпись (RU)<input id="rSub"></label>
+    <label>Подпись (EN)<input id="rSubEn"></label>
+    <label>Заголовок требований (RU)<input id="rSpecTitle"></label>
+    <label>Заголовок требований (EN)<input id="rSpecTitleEn"></label>
+    <label>Требования (RU), через запятую<textarea id="rSpec" rows="3"></textarea></label>
+    <label>Требования (EN), через запятую<textarea id="rSpecEn" rows="3"></textarea></label>
+    <div class="dlg__actions">
+      <button type="button" class="btn btn--danger" id="rDelete">Удалить строку</button>
+      <span class="sep"></span>
+      <button type="button" class="btn" value="cancel" id="rCancel">Отмена</button>
+      <button type="submit" class="btn btn--primary" value="ok">Готово</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- диалог: элеваторы -->
+<dialog id="dlgElev">
+  <form method="dialog" class="dlg dlg--wide">
+    <h3>Элеваторы (колонки прайса)</h3>
+    <table class="tbl" id="elevTable"><thead><tr><th>Название (RU)</th><th>Название (EN)</th><th>Регион (RU)</th><th>Регион (EN)</th><th></th></tr></thead><tbody></tbody></table>
+    <div class="dlg__actions">
+      <button type="button" class="btn" id="eAdd">+ элеватор</button>
+      <span class="sep"></span>
+      <button type="submit" class="btn btn--primary" value="ok">Готово</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="admin.js"></script>
+</body>
+</html>

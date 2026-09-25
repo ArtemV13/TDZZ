@@ -1,0 +1,1933 @@
+{
+ "_comment": "Закупочные цены сайта tdzz.ru. Редактируется через /admin/ или вручную. Цены в рублях за тонну без НДС, базис CPT элеватор. null = «по согласованию». home_mode: \"quiz\" — на главной квиз «Продать зерно за 5 вопросов»; \"prices\" — таблица цен.",
+ "updated": "2026-09-21",
+ "vat_percent": 10,
+ "basis": {
+  "ru": "CPT элеватор",
+  "en": "CPT elevator"
+ },
+ "featured": [
+  {
+   "title": {
+    "ru": "Пшеница 12.5%",
+    "en": "Wheat 12.5%"
+   },
+   "sub": {
+    "ru": "Заготзерно · CPT",
+    "en": "Zagotzerno · CPT"
+   },
+   "price": 24100
+  },
+  {
+   "title": {
+    "ru": "Ячмень фуражный",
+    "en": "Feed barley"
+   },
+   "sub": {
+    "ru": "Тандем · CPT",
+    "en": "Tandem · CPT"
+   },
+   "price": 21300
+  },
+  {
+   "title": {
+    "ru": "Подсолнечник",
+    "en": "Sunflower seed"
+   },
+   "sub": {
+    "ru": "Заготзерно · CPT",
+    "en": "Zagotzerno · CPT"
+   },
+   "price": 38600
+  }
+ ],
+ "elevators": [
+  {
+   "id": "zagotzerno",
+   "name": {
+    "ru": "Заготзерно",
+    "en": "Zagotzerno"
+   },
+   "region": {
+    "ru": "Волгоградская обл.",
+    "en": "Volgograd region"
+   }
+  },
+  {
+   "id": "yaryzhki",
+   "name": {
+    "ru": "Ярыжки",
+    "en": "Yaryzhki"
+   },
+   "region": {
+    "ru": "Волгоградская обл.",
+    "en": "Volgograd region"
+   }
+  },
+  {
+   "id": "solodchinskoe",
+   "name": {
+    "ru": "Солодчинское",
+    "en": "Solodchinskoye"
+   },
+   "region": {
+    "ru": "Волгоградская обл.",
+    "en": "Volgograd region"
+   }
+  },
+  {
+   "id": "borelskiy",
+   "name": {
+    "ru": "Борельский",
+    "en": "Borelskiy"
+   },
+   "region": {
+    "ru": "Волгоградская обл.",
+    "en": "Volgograd region"
+   }
+  },
+  {
+   "id": "arkadak",
+   "name": {
+    "ru": "Аркадак",
+    "en": "Arkadak"
+   },
+   "region": {
+    "ru": "Саратовская обл.",
+    "en": "Saratov region"
+   }
+  },
+  {
+   "id": "petrovskie-hleba",
+   "name": {
+    "ru": "Петровские хлеба",
+    "en": "Petrovskiye Khleba"
+   },
+   "region": {
+    "ru": "Саратовская обл.",
+    "en": "Saratov region"
+   }
+  },
+  {
+   "id": "tandem",
+   "name": {
+    "ru": "Тандем",
+    "en": "Tandem"
+   },
+   "region": {
+    "ru": "Краснодарский край",
+    "en": "Krasnodar region"
+   }
+  },
+  {
+   "id": "girey",
+   "name": {
+    "ru": "Гирей",
+    "en": "Girey"
+   },
+   "region": {
+    "ru": "Краснодарский край",
+    "en": "Krasnodar region"
+   }
+  },
+  {
+   "id": "veles",
+   "name": {
+    "ru": "Велес",
+    "en": "Veles"
+   },
+   "region": {
+    "ru": "Тамбовская обл.",
+    "en": "Tambov region"
+   }
+  },
+  {
+   "id": "bukanovskoe-hpp",
+   "name": {
+    "ru": "Букановское ХПП",
+    "en": "Bukanovskoye HPP"
+   },
+   "region": {
+    "ru": "Волгоградская обл.",
+    "en": "Volgograd region"
+   }
+  },
+  {
+   "id": "oktyabrskoe-hpp",
+   "name": {
+    "ru": "Октябрьское ХПП",
+    "en": "Oktyabrskoye HPP"
+   },
+   "region": {
+    "ru": "Волгоградская обл.",
+    "en": "Volgograd region"
+   }
+  },
+  {
+   "id": "podgorenskiy",
+   "name": {
+    "ru": "Подгоренский",
+    "en": "Podgorensky"
+   },
+   "region": {
+    "ru": "Воронежская обл.",
+    "en": "Voronezh region"
+   }
+  },
+  {
+   "id": "duet",
+   "name": {
+    "ru": "Дуэт",
+    "en": "Duet"
+   },
+   "region": {
+    "ru": "Волгоградская обл.",
+    "en": "Volgograd region"
+   }
+  },
+  {
+   "id": "diona",
+   "name": {
+    "ru": "Диона",
+    "en": "Diona"
+   },
+   "region": {
+    "ru": "Ростов-на-Дону",
+    "en": "Rostov-on-Don"
+   }
+  }
+ ],
+ "crops": [
+  {
+   "id": "wheat",
+   "label": {
+    "ru": "Пшеница",
+    "en": "Wheat"
+   },
+   "qualities": [
+    {
+     "id": "wheat-1",
+     "name": {
+      "ru": "3 класс · ≥13.5%",
+      "en": "Class 3 · ≥13.5%"
+     },
+     "sub": {
+      "ru": "TW ≥ 77 · FN ≥ 250",
+      "en": "TW ≥ 77 · FN ≥ 250"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "клейковина ≥ 25",
+       "ИДК ≤ 90",
+       "клоп ≤ 3",
+       "протеин ≥ 13.5",
+       "ЧП ≥ 250",
+       "натура ≥ 770",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "другие злаковые ≤ 5%",
+       "пшеница другого типа ≤ 10%"
+      ],
+      "en": [
+       "crop 2025",
+       "wet gluten ≥ 25",
+       "GDI ≤ 90",
+       "bug damage ≤ 3",
+       "protein ≥ 13.5",
+       "FN ≥ 250",
+       "test weight ≥ 770",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "other cereals ≤ 5%",
+       "other wheat types ≤ 10%"
+      ]
+     },
+     "spec_title": {
+      "ru": "Пшеница · 3 класс · протеин ≥ 13.5%",
+      "en": "Wheat · Class 3 · protein ≥ 13.5%"
+     },
+     "prices": {
+      "zagotzerno": 24800,
+      "yaryzhki": 24650,
+      "solodchinskoe": 24550,
+      "borelskiy": 24450,
+      "arkadak": null,
+      "petrovskie-hleba": 24380,
+      "tandem": 24500,
+      "girey": 24340,
+      "veles": 24420,
+      "bukanovskoe-hpp": 24180,
+      "oktyabrskoe-hpp": 24090,
+      "podgorenskiy": null,
+      "duet": 24210,
+      "diona": 24540
+     }
+    },
+    {
+     "id": "wheat-2",
+     "name": {
+      "ru": "3 класс · ≥12.5%",
+      "en": "Class 3 · ≥12.5%"
+     },
+     "sub": {
+      "ru": "TW ≥ 77 · FN ≥ 250",
+      "en": "TW ≥ 77 · FN ≥ 250"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "клейковина ≥ 23",
+       "ИДК ≤ 90",
+       "клоп ≤ 3",
+       "протеин ≥ 12.5",
+       "ЧП ≥ 250",
+       "натура ≥ 770",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "другие злаковые ≤ 5%",
+       "пшеница другого типа ≤ 10%"
+      ],
+      "en": [
+       "crop 2025",
+       "wet gluten ≥ 23",
+       "GDI ≤ 90",
+       "bug damage ≤ 3",
+       "protein ≥ 12.5",
+       "FN ≥ 250",
+       "test weight ≥ 770",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "other cereals ≤ 5%",
+       "other wheat types ≤ 10%"
+      ]
+     },
+     "spec_title": {
+      "ru": "Пшеница · 3 класс · протеин ≥ 12.5%",
+      "en": "Wheat · Class 3 · protein ≥ 12.5%"
+     },
+     "prices": {
+      "zagotzerno": 24100,
+      "yaryzhki": 23950,
+      "solodchinskoe": 23850,
+      "borelskiy": 23750,
+      "arkadak": null,
+      "petrovskie-hleba": 23680,
+      "tandem": 23800,
+      "girey": 23640,
+      "veles": 23720,
+      "bukanovskoe-hpp": 23480,
+      "oktyabrskoe-hpp": 23390,
+      "podgorenskiy": null,
+      "duet": 23510,
+      "diona": 23840
+     }
+    },
+    {
+     "id": "wheat-3",
+     "name": {
+      "ru": "4 класс · ≥11.5%",
+      "en": "Class 4 · ≥11.5%"
+     },
+     "sub": {
+      "ru": "TW ≥ 76 · FN ≥ 220",
+      "en": "TW ≥ 76 · FN ≥ 220"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "клейковина ≥ 18",
+       "ИДК ≤ 90",
+       "клоп ≤ 3",
+       "протеин ≥ 11.5",
+       "ЧП ≥ 220",
+       "натура ≥ 740",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "примесь других злаковых культур ≤ 5%",
+       "пшеница другого типа ≤ 10%"
+      ],
+      "en": [
+       "crop 2025",
+       "wet gluten ≥ 18",
+       "GDI ≤ 90",
+       "bug damage ≤ 3",
+       "protein ≥ 11.5",
+       "FN ≥ 220",
+       "test weight ≥ 740",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "other cereals ≤ 5%",
+       "other wheat types ≤ 10%"
+      ]
+     },
+     "spec_title": {
+      "ru": "Пшеница · 4 класс · протеин ≥ 11.5%",
+      "en": "Wheat · Class 4 · protein ≥ 11.5%"
+     },
+     "prices": {
+      "zagotzerno": 23200,
+      "yaryzhki": 23050,
+      "solodchinskoe": 22950,
+      "borelskiy": 22850,
+      "arkadak": null,
+      "petrovskie-hleba": 22780,
+      "tandem": 22900,
+      "girey": 22740,
+      "veles": 22820,
+      "bukanovskoe-hpp": 22580,
+      "oktyabrskoe-hpp": 22490,
+      "podgorenskiy": null,
+      "duet": 22610,
+      "diona": 22940
+     }
+    },
+    {
+     "id": "wheat-4",
+     "name": {
+      "ru": "4 класс · ≥10.5%",
+      "en": "Class 4 · ≥10.5%"
+     },
+     "sub": {
+      "ru": "TW ≥ 74 · FN ≥ 200",
+      "en": "TW ≥ 74 · FN ≥ 200"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "протеин ≥ 10.5",
+       "ЧП ≥ 200",
+       "натура ≥ 740",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "клоп — по спецификации",
+       "другие злаковые — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "protein ≥ 10.5",
+       "FN ≥ 200",
+       "test weight ≥ 740",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "bug damage — as per specification",
+       "other cereals — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Пшеница · 4 класс · протеин ≥ 10.5%",
+      "en": "Wheat · Class 4 · protein ≥ 10.5%"
+     },
+     "prices": {
+      "zagotzerno": 22600,
+      "yaryzhki": 22450,
+      "solodchinskoe": 22350,
+      "borelskiy": 22250,
+      "arkadak": null,
+      "petrovskie-hleba": 22180,
+      "tandem": 22300,
+      "girey": 22140,
+      "veles": 22220,
+      "bukanovskoe-hpp": 21980,
+      "oktyabrskoe-hpp": 21890,
+      "podgorenskiy": null,
+      "duet": 22010,
+      "diona": 22340
+     }
+    },
+    {
+     "id": "wheat-5",
+     "name": {
+      "ru": "Фуражная",
+      "en": "Feed grade"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "запах — свойственный здоровому зерну",
+       "живые вредители не допускаются",
+       "остальные показатели — по согласованию"
+      ],
+      "en": [
+       "crop 2025",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "sound grain odour",
+       "free from live insects",
+       "other parameters — subject to agreement"
+      ]
+     },
+     "spec_title": {
+      "ru": "Пшеница фуражная",
+      "en": "Feed wheat"
+     },
+     "prices": {
+      "zagotzerno": 21800,
+      "yaryzhki": 21650,
+      "solodchinskoe": 21550,
+      "borelskiy": 21450,
+      "arkadak": null,
+      "petrovskie-hleba": 21380,
+      "tandem": 21500,
+      "girey": 21340,
+      "veles": 21420,
+      "bukanovskoe-hpp": 21180,
+      "oktyabrskoe-hpp": 21090,
+      "podgorenskiy": null,
+      "duet": 21210,
+      "diona": 21540
+     }
+    },
+    {
+     "id": "wheat-6",
+     "name": {
+      "ru": "Натура ≥ 740",
+      "en": "Test weight ≥ 740"
+     },
+     "sub": {
+      "ru": "прочие показатели — по спецификации",
+      "en": "other parameters — as per specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "натура ≥ 740",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "протеин / клейковина — по анализу",
+       "окончательная цена после лаборатории"
+      ],
+      "en": [
+       "crop 2025",
+       "test weight ≥ 740",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "protein / wet gluten — based on analysis",
+       "final price after laboratory analysis"
+      ]
+     },
+     "spec_title": {
+      "ru": "Пшеница · натура ≥ 740",
+      "en": "Wheat · test weight ≥ 740"
+     },
+     "prices": {
+      "zagotzerno": 22250,
+      "yaryzhki": 22100,
+      "solodchinskoe": 22000,
+      "borelskiy": 21900,
+      "arkadak": null,
+      "petrovskie-hleba": 21830,
+      "tandem": 21950,
+      "girey": 21790,
+      "veles": 21870,
+      "bukanovskoe-hpp": 21630,
+      "oktyabrskoe-hpp": 21540,
+      "podgorenskiy": null,
+      "duet": 21660,
+      "diona": 21990
+     }
+    },
+    {
+     "id": "wheat-7",
+     "name": {
+      "ru": "Натура ≥ 720",
+      "en": "Test weight ≥ 720"
+     },
+     "sub": {
+      "ru": "прочие показатели — по спецификации",
+      "en": "other parameters — as per specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "натура ≥ 720",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "протеин / клейковина — по анализу",
+       "окончательная цена после лаборатории"
+      ],
+      "en": [
+       "crop 2025",
+       "test weight ≥ 720",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "protein / wet gluten — based on analysis",
+       "final price after laboratory analysis"
+      ]
+     },
+     "spec_title": {
+      "ru": "Пшеница · натура ≥ 720",
+      "en": "Wheat · test weight ≥ 720"
+     },
+     "prices": {
+      "zagotzerno": 21650,
+      "yaryzhki": 21500,
+      "solodchinskoe": 21400,
+      "borelskiy": 21300,
+      "arkadak": null,
+      "petrovskie-hleba": 21230,
+      "tandem": 21350,
+      "girey": 21190,
+      "veles": 21270,
+      "bukanovskoe-hpp": 21030,
+      "oktyabrskoe-hpp": 20940,
+      "podgorenskiy": null,
+      "duet": 21060,
+      "diona": 21390
+     }
+    }
+   ],
+   "hero_sub": {
+    "ru": "3–4 класс, фуражная",
+    "en": "class 3–4, feed"
+   }
+  },
+  {
+   "id": "barley",
+   "label": {
+    "ru": "Ячмень",
+    "en": "Barley"
+   },
+   "qualities": [
+    {
+     "id": "barley-1",
+     "name": {
+      "ru": "Фуражный · натура ≥ 650",
+      "en": "Feed · test weight ≥ 650"
+     },
+     "sub": {
+      "ru": "влажность / сорность по спецификации",
+      "en": "moisture / foreign matter as per specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "натура ≥ 650",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "зерновая примесь — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "test weight ≥ 650",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "grain admixture — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Ячмень фуражный · натура ≥ 650",
+      "en": "Feed barley · test weight ≥ 650"
+     },
+     "prices": {
+      "zagotzerno": 21100,
+      "yaryzhki": 20950,
+      "solodchinskoe": 20850,
+      "borelskiy": 20750,
+      "arkadak": 20600,
+      "petrovskie-hleba": null,
+      "tandem": 20800,
+      "girey": 20640,
+      "veles": 20720,
+      "bukanovskoe-hpp": 20480,
+      "oktyabrskoe-hpp": 20390,
+      "podgorenskiy": null,
+      "duet": 20510,
+      "diona": 20840
+     }
+    },
+    {
+     "id": "barley-2",
+     "name": {
+      "ru": "Фуражный · натура ≥ 630",
+      "en": "Feed · test weight ≥ 630"
+     },
+     "sub": {
+      "ru": "влажность / сорность по спецификации",
+      "en": "moisture / foreign matter as per specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "натура ≥ 630",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%"
+      ],
+      "en": [
+       "crop 2025",
+       "test weight ≥ 630",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%"
+      ]
+     },
+     "spec_title": {
+      "ru": "Ячмень фуражный · натура ≥ 630",
+      "en": "Feed barley · test weight ≥ 630"
+     },
+     "prices": {
+      "zagotzerno": 20700,
+      "yaryzhki": 20550,
+      "solodchinskoe": 20450,
+      "borelskiy": 20350,
+      "arkadak": 20200,
+      "petrovskie-hleba": null,
+      "tandem": 20400,
+      "girey": 20240,
+      "veles": 20320,
+      "bukanovskoe-hpp": 20080,
+      "oktyabrskoe-hpp": 19990,
+      "podgorenskiy": null,
+      "duet": 20110,
+      "diona": 20440
+     }
+    },
+    {
+     "id": "barley-3",
+     "name": {
+      "ru": "Экспортный",
+      "en": "Export grade"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "натура / влажность / сорность — по контрактной спецификации",
+       "лабораторный анализ обязателен"
+      ],
+      "en": [
+       "crop 2025",
+       "test weight / moisture / foreign matter — as per contract specification",
+       "laboratory analysis required"
+      ]
+     },
+     "spec_title": {
+      "ru": "Ячмень экспортный",
+      "en": "Barley export"
+     },
+     "prices": {
+      "zagotzerno": 21600,
+      "yaryzhki": 21450,
+      "solodchinskoe": 21350,
+      "borelskiy": 21250,
+      "arkadak": 21100,
+      "petrovskie-hleba": null,
+      "tandem": 21300,
+      "girey": 21140,
+      "veles": 21220,
+      "bukanovskoe-hpp": 20980,
+      "oktyabrskoe-hpp": 20890,
+      "podgorenskiy": null,
+      "duet": 21010,
+      "diona": 21340
+     }
+    },
+    {
+     "id": "barley-4",
+     "name": {
+      "ru": "Пивоваренный",
+      "en": "Malting"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "сорт и всхожесть — по спецификации",
+       "белок — по спецификации",
+       "влажность — по спецификации"
+      ],
+      "en": [
+       "variety and germination — as per specification",
+       "protein — as per specification",
+       "moisture — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Ячмень пивоваренный",
+      "en": "Barley malting"
+     },
+     "prices": {
+      "zagotzerno": 23600,
+      "yaryzhki": 23450,
+      "solodchinskoe": 23350,
+      "borelskiy": 23250,
+      "arkadak": 23100,
+      "petrovskie-hleba": null,
+      "tandem": 23300,
+      "girey": 23140,
+      "veles": 23220,
+      "bukanovskoe-hpp": 22980,
+      "oktyabrskoe-hpp": 22890,
+      "podgorenskiy": null,
+      "duet": 23010,
+      "diona": 23340
+     }
+    },
+    {
+     "id": "barley-5",
+     "name": {
+      "ru": "Повышенная влажность",
+      "en": "Higher moisture"
+     },
+     "sub": {
+      "ru": "расчёт с дисконтом после анализа",
+      "en": "price adjustment after analysis"
+     },
+     "spec": {
+      "ru": [
+       "расчёт стоимости сушки",
+       "окончательная цена после анализа",
+       "приёмка по согласованию"
+      ],
+      "en": [
+       "drying cost adjustment",
+       "final price after analysis",
+       "intake subject to agreement"
+      ]
+     },
+     "spec_title": {
+      "ru": "Ячмень · повышенная влажность",
+      "en": "Barley · higher moisture"
+     },
+     "prices": {
+      "zagotzerno": 19800,
+      "yaryzhki": 19650,
+      "solodchinskoe": 19550,
+      "borelskiy": 19450,
+      "arkadak": 19300,
+      "petrovskie-hleba": null,
+      "tandem": 19500,
+      "girey": 19340,
+      "veles": 19420,
+      "bukanovskoe-hpp": 19180,
+      "oktyabrskoe-hpp": 19090,
+      "podgorenskiy": null,
+      "duet": 19210,
+      "diona": 19540
+     }
+    },
+    {
+     "id": "barley-6",
+     "name": {
+      "ru": "По согласованию",
+      "en": "Subject to agreement"
+     },
+     "sub": {
+      "ru": "индивидуальная оценка партии",
+      "en": "individual lot assessment"
+     },
+     "spec": {
+      "ru": [
+       "индивидуальная оценка партии",
+       "условия подтверждает закупщик"
+      ],
+      "en": [
+       "individual lot assessment",
+       "terms confirmed by procurement manager"
+      ]
+     },
+     "spec_title": {
+      "ru": "Ячмень · по согласованию",
+      "en": "Barley · subject to agreement"
+     },
+     "prices": {
+      "zagotzerno": 20300,
+      "yaryzhki": 20150,
+      "solodchinskoe": 20050,
+      "borelskiy": 19950,
+      "arkadak": 19800,
+      "petrovskie-hleba": null,
+      "tandem": 20000,
+      "girey": 19840,
+      "veles": 19920,
+      "bukanovskoe-hpp": 19680,
+      "oktyabrskoe-hpp": 19590,
+      "podgorenskiy": null,
+      "duet": 19710,
+      "diona": 20040
+     }
+    }
+   ],
+   "hero_sub": {
+    "ru": "фуражный · все элеваторы сети",
+    "en": "feed · all elevators"
+   }
+  },
+  {
+   "id": "corn",
+   "label": {
+    "ru": "Кукуруза",
+    "en": "Corn"
+   },
+   "qualities": [
+    {
+     "id": "corn-1",
+     "name": {
+      "ru": "Кукуруза · базис",
+      "en": "Corn · basis"
+     },
+     "sub": {
+      "ru": "влажность ≤ 14% · сорность ≤ 2%",
+      "en": "moisture ≤ 14% · foreign matter ≤ 2%"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "влажность ≤ 14%",
+       "сорная примесь ≤ 2%",
+       "зерновая примесь — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "moisture ≤ 14%",
+       "foreign matter ≤ 2%",
+       "grain admixture — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Кукуруза · базис",
+      "en": "Corn · basis"
+     },
+     "prices": {
+      "zagotzerno": 20500,
+      "yaryzhki": 20350,
+      "solodchinskoe": 20250,
+      "borelskiy": null,
+      "arkadak": 20000,
+      "petrovskie-hleba": 20080,
+      "tandem": 20200,
+      "girey": 20040,
+      "veles": 20120,
+      "bukanovskoe-hpp": 19880,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 19960,
+      "duet": 19910,
+      "diona": 20240
+     }
+    },
+    {
+     "id": "corn-2",
+     "name": {
+      "ru": "Влажность 14.1–16%",
+      "en": "Moisture 14.1–16%"
+     },
+     "sub": {
+      "ru": "с дисконтом за сушку",
+      "en": "drying discount applies"
+     },
+     "spec": {
+      "ru": [
+       "сушка с дисконтом",
+       "сорная примесь ≤ 2%",
+       "окончательная цена после лаборатории"
+      ],
+      "en": [
+       "drying discount applies",
+       "foreign matter ≤ 2%",
+       "final price after laboratory analysis"
+      ]
+     },
+     "spec_title": {
+      "ru": "Кукуруза · влажность 14.1–16%",
+      "en": "Corn · moisture 14.1–16%"
+     },
+     "prices": {
+      "zagotzerno": 19850,
+      "yaryzhki": 19700,
+      "solodchinskoe": 19600,
+      "borelskiy": null,
+      "arkadak": 19350,
+      "petrovskie-hleba": 19430,
+      "tandem": 19550,
+      "girey": 19390,
+      "veles": 19470,
+      "bukanovskoe-hpp": 19230,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 19310,
+      "duet": 19260,
+      "diona": 19590
+     }
+    },
+    {
+     "id": "corn-3",
+     "name": {
+      "ru": "Влажность 16.1–18%",
+      "en": "Moisture 16.1–18%"
+     },
+     "sub": {
+      "ru": "с дисконтом за сушку",
+      "en": "drying discount applies"
+     },
+     "spec": {
+      "ru": [
+       "сушка с повышенным дисконтом",
+       "приёмка по согласованию",
+       "окончательная цена после лаборатории"
+      ],
+      "en": [
+       "higher drying discount applies",
+       "intake subject to agreement",
+       "final price after laboratory analysis"
+      ]
+     },
+     "spec_title": {
+      "ru": "Кукуруза · влажность 16.1–18%",
+      "en": "Corn · moisture 16.1–18%"
+     },
+     "prices": {
+      "zagotzerno": 19200,
+      "yaryzhki": 19050,
+      "solodchinskoe": 18950,
+      "borelskiy": null,
+      "arkadak": 18700,
+      "petrovskie-hleba": 18780,
+      "tandem": 18900,
+      "girey": 18740,
+      "veles": 18820,
+      "bukanovskoe-hpp": 18580,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 18660,
+      "duet": 18610,
+      "diona": 18940
+     }
+    },
+    {
+     "id": "corn-4",
+     "name": {
+      "ru": "Экспортная",
+      "en": "Export grade"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "показатели — по контрактной спецификации",
+       "GMO / фитосанитарные требования — по назначению"
+      ],
+      "en": [
+       "parameters — as per contract specification",
+       "GMO / phytosanitary requirements — destination-specific"
+      ]
+     },
+     "spec_title": {
+      "ru": "Кукуруза экспортная",
+      "en": "Export corn"
+     },
+     "prices": {
+      "zagotzerno": 20900,
+      "yaryzhki": 20750,
+      "solodchinskoe": 20650,
+      "borelskiy": null,
+      "arkadak": 20400,
+      "petrovskie-hleba": 20480,
+      "tandem": 20600,
+      "girey": 20440,
+      "veles": 20520,
+      "bukanovskoe-hpp": 20280,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 20360,
+      "duet": 20310,
+      "diona": 20640
+     }
+    },
+    {
+     "id": "corn-5",
+     "name": {
+      "ru": "Фуражная",
+      "en": "Feed grade"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "влажность / сорность — по спецификации",
+       "приёмка после лабораторного анализа"
+      ],
+      "en": [
+       "moisture / foreign matter — as per specification",
+       "intake after laboratory analysis"
+      ]
+     },
+     "spec_title": {
+      "ru": "Кукуруза фуражная",
+      "en": "Feed corn"
+     },
+     "prices": {
+      "zagotzerno": 20100,
+      "yaryzhki": 19950,
+      "solodchinskoe": 19850,
+      "borelskiy": null,
+      "arkadak": 19600,
+      "petrovskie-hleba": 19680,
+      "tandem": 19800,
+      "girey": 19640,
+      "veles": 19720,
+      "bukanovskoe-hpp": 19480,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 19560,
+      "duet": 19510,
+      "diona": 19840
+     }
+    },
+    {
+     "id": "corn-6",
+     "name": {
+      "ru": "По согласованию",
+      "en": "Subject to agreement"
+     },
+     "sub": {
+      "ru": "индивидуальная оценка партии",
+      "en": "individual lot assessment"
+     },
+     "spec": {
+      "ru": [
+       "индивидуальная оценка партии",
+       "условия подтверждает закупщик"
+      ],
+      "en": [
+       "individual lot assessment",
+       "terms confirmed by procurement manager"
+      ]
+     },
+     "spec_title": {
+      "ru": "Кукуруза · по согласованию",
+      "en": "Corn · subject to agreement"
+     },
+     "prices": {
+      "zagotzerno": 19600,
+      "yaryzhki": 19450,
+      "solodchinskoe": 19350,
+      "borelskiy": null,
+      "arkadak": 19100,
+      "petrovskie-hleba": 19180,
+      "tandem": 19300,
+      "girey": 19140,
+      "veles": 19220,
+      "bukanovskoe-hpp": 18980,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 19060,
+      "duet": 19010,
+      "diona": 19340
+     }
+    }
+   ],
+   "hero_sub": {
+    "ru": "с октября · сушка на месте",
+    "en": "from October · on-site drying"
+   }
+  },
+  {
+   "id": "sunflower",
+   "label": {
+    "ru": "Подсолнечник",
+    "en": "Sunflower seed"
+   },
+   "qualities": [
+    {
+     "id": "sunflower-1",
+     "name": {
+      "ru": "Масличность ≥ 50%",
+      "en": "Oil content ≥ 50%"
+     },
+     "sub": {
+      "ru": "влажность ≤ 8% · сорность ≤ 2%",
+      "en": "moisture ≤ 8% · foreign matter ≤ 2%"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "масличность ≥ 50%",
+       "влажность ≤ 8%",
+       "сорная примесь ≤ 2%",
+       "кислотное число — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "oil content ≥ 50%",
+       "moisture ≤ 8%",
+       "foreign matter ≤ 2%",
+       "acid value — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Подсолнечник · масличность ≥ 50%",
+      "en": "Sunflower seed · oil content ≥ 50%"
+     },
+     "prices": {
+      "zagotzerno": 39800,
+      "yaryzhki": 39650,
+      "solodchinskoe": null,
+      "borelskiy": 39450,
+      "arkadak": 39300,
+      "petrovskie-hleba": 39380,
+      "tandem": 39500,
+      "girey": 39340,
+      "veles": 39420,
+      "bukanovskoe-hpp": 39180,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 39260,
+      "duet": 39210,
+      "diona": 39540
+     }
+    },
+    {
+     "id": "sunflower-2",
+     "name": {
+      "ru": "Масличность 48–49.9%",
+      "en": "Oil content 48–49.9%"
+     },
+     "sub": {
+      "ru": "влажность ≤ 8% · сорность ≤ 2%",
+      "en": "moisture ≤ 8% · foreign matter ≤ 2%"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "масличность 48–49.9%",
+       "влажность ≤ 8%",
+       "сорная примесь ≤ 2%"
+      ],
+      "en": [
+       "crop 2025",
+       "oil content 48–49.9%",
+       "moisture ≤ 8%",
+       "foreign matter ≤ 2%"
+      ]
+     },
+     "spec_title": {
+      "ru": "Подсолнечник · масличность 48–49.9%",
+      "en": "Sunflower seed · oil content 48–49.9%"
+     },
+     "prices": {
+      "zagotzerno": 39200,
+      "yaryzhki": 39050,
+      "solodchinskoe": null,
+      "borelskiy": 38850,
+      "arkadak": 38700,
+      "petrovskie-hleba": 38780,
+      "tandem": 38900,
+      "girey": 38740,
+      "veles": 38820,
+      "bukanovskoe-hpp": 38580,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 38660,
+      "duet": 38610,
+      "diona": 38940
+     }
+    },
+    {
+     "id": "sunflower-3",
+     "name": {
+      "ru": "Масличность 46–47.9%",
+      "en": "Oil content 46–47.9%"
+     },
+     "sub": {
+      "ru": "влажность ≤ 8% · сорность ≤ 2%",
+      "en": "moisture ≤ 8% · foreign matter ≤ 2%"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "масличность 46–47.9%",
+       "влажность ≤ 8%",
+       "сорная примесь ≤ 2%"
+      ],
+      "en": [
+       "crop 2025",
+       "oil content 46–47.9%",
+       "moisture ≤ 8%",
+       "foreign matter ≤ 2%"
+      ]
+     },
+     "spec_title": {
+      "ru": "Подсолнечник · масличность 46–47.9%",
+      "en": "Sunflower seed · oil content 46–47.9%"
+     },
+     "prices": {
+      "zagotzerno": 38600,
+      "yaryzhki": 38450,
+      "solodchinskoe": null,
+      "borelskiy": 38250,
+      "arkadak": 38100,
+      "petrovskie-hleba": 38180,
+      "tandem": 38300,
+      "girey": 38140,
+      "veles": 38220,
+      "bukanovskoe-hpp": 37980,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 38060,
+      "duet": 38010,
+      "diona": 38340
+     }
+    },
+    {
+     "id": "sunflower-4",
+     "name": {
+      "ru": "Масличность 44–45.9%",
+      "en": "Oil content 44–45.9%"
+     },
+     "sub": {
+      "ru": "влажность ≤ 8% · сорность ≤ 2%",
+      "en": "moisture ≤ 8% · foreign matter ≤ 2%"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "масличность 44–45.9%",
+       "влажность ≤ 8%",
+       "сорная примесь ≤ 2%"
+      ],
+      "en": [
+       "crop 2025",
+       "oil content 44–45.9%",
+       "moisture ≤ 8%",
+       "foreign matter ≤ 2%"
+      ]
+     },
+     "spec_title": {
+      "ru": "Подсолнечник · масличность 44–45.9%",
+      "en": "Sunflower seed · oil content 44–45.9%"
+     },
+     "prices": {
+      "zagotzerno": 37100,
+      "yaryzhki": 36950,
+      "solodchinskoe": null,
+      "borelskiy": 36750,
+      "arkadak": 36600,
+      "petrovskie-hleba": 36680,
+      "tandem": 36800,
+      "girey": 36640,
+      "veles": 36720,
+      "bukanovskoe-hpp": 36480,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 36560,
+      "duet": 36510,
+      "diona": 36840
+     }
+    },
+    {
+     "id": "sunflower-5",
+     "name": {
+      "ru": "Повышенная влажность",
+      "en": "Higher moisture"
+     },
+     "sub": {
+      "ru": "цена после лабораторного анализа",
+      "en": "price after laboratory analysis"
+     },
+     "spec": {
+      "ru": [
+       "расчёт с дисконтом",
+       "окончательная цена после лаборатории",
+       "приёмка по согласованию"
+      ],
+      "en": [
+       "price adjustment",
+       "final price after laboratory analysis",
+       "intake subject to agreement"
+      ]
+     },
+     "spec_title": {
+      "ru": "Подсолнечник · повышенная влажность",
+      "en": "Sunflower seed · higher moisture"
+     },
+     "prices": {
+      "zagotzerno": 36200,
+      "yaryzhki": 36050,
+      "solodchinskoe": null,
+      "borelskiy": 35850,
+      "arkadak": 35700,
+      "petrovskie-hleba": 35780,
+      "tandem": 35900,
+      "girey": 35740,
+      "veles": 35820,
+      "bukanovskoe-hpp": 35580,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 35660,
+      "duet": 35610,
+      "diona": 35940
+     }
+    },
+    {
+     "id": "sunflower-6",
+     "name": {
+      "ru": "По согласованию",
+      "en": "Subject to agreement"
+     },
+     "sub": {
+      "ru": "индивидуальная оценка партии",
+      "en": "individual lot assessment"
+     },
+     "spec": {
+      "ru": [
+       "индивидуальная оценка партии",
+       "условия подтверждает закупщик"
+      ],
+      "en": [
+       "individual lot assessment",
+       "terms confirmed by procurement manager"
+      ]
+     },
+     "spec_title": {
+      "ru": "Подсолнечник · по согласованию",
+      "en": "Sunflower seed · subject to agreement"
+     },
+     "prices": {
+      "zagotzerno": 35500,
+      "yaryzhki": 35350,
+      "solodchinskoe": null,
+      "borelskiy": 35150,
+      "arkadak": 35000,
+      "petrovskie-hleba": 35080,
+      "tandem": 35200,
+      "girey": 35040,
+      "veles": 35120,
+      "bukanovskoe-hpp": 34880,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 34960,
+      "duet": 34910,
+      "diona": 35240
+     }
+    }
+   ],
+   "hero_sub": {
+    "ru": "масличность от 44%",
+    "en": "oil content from 44%"
+   }
+  },
+  {
+   "id": "pulses",
+   "label": {
+    "ru": "Горох / нут",
+    "en": "Peas / chickpeas"
+   },
+   "qualities": [
+    {
+     "id": "pulses-1",
+     "name": {
+      "ru": "Горох продовольственный",
+      "en": "Food-grade peas"
+     },
+     "sub": {
+      "ru": "базовая спецификация",
+      "en": "base specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "влажность / сорность — по спецификации",
+       "цвет и повреждение — по анализу"
+      ],
+      "en": [
+       "crop 2025",
+       "moisture / foreign matter — as per specification",
+       "colour and damage — based on analysis"
+      ]
+     },
+     "spec_title": {
+      "ru": "Горох продовольственный",
+      "en": "Food-grade peas"
+     },
+     "prices": {
+      "zagotzerno": 22600,
+      "yaryzhki": 22450,
+      "solodchinskoe": 22350,
+      "borelskiy": 22250,
+      "arkadak": 22100,
+      "petrovskie-hleba": 22180,
+      "tandem": 22300,
+      "girey": 22140,
+      "veles": 22220,
+      "bukanovskoe-hpp": 21980,
+      "oktyabrskoe-hpp": 21890,
+      "podgorenskiy": 22060,
+      "duet": 22010,
+      "diona": 22340
+     }
+    },
+    {
+     "id": "pulses-2",
+     "name": {
+      "ru": "Горох фуражный",
+      "en": "Peas feed"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "влажность / сорность — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "moisture / foreign matter — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Горох фуражный",
+      "en": "Peas feed"
+     },
+     "prices": {
+      "zagotzerno": 21100,
+      "yaryzhki": 20950,
+      "solodchinskoe": 20850,
+      "borelskiy": 20750,
+      "arkadak": 20600,
+      "petrovskie-hleba": 20680,
+      "tandem": 20800,
+      "girey": 20640,
+      "veles": 20720,
+      "bukanovskoe-hpp": 20480,
+      "oktyabrskoe-hpp": 20390,
+      "podgorenskiy": 20560,
+      "duet": 20510,
+      "diona": 20840
+     }
+    },
+    {
+     "id": "pulses-3",
+     "name": {
+      "ru": "Нут 8+ мм",
+      "en": "Chickpeas 8+ mm"
+     },
+     "sub": {
+      "ru": "калибровка по контракту",
+      "en": "calibration as per contract"
+     },
+     "spec": {
+      "ru": [
+       "калибр ≥ 8 мм",
+       "цвет / повреждение — по спецификации",
+       "влажность — по спецификации"
+      ],
+      "en": [
+       "calibre ≥ 8 mm",
+       "colour / damage — as per specification",
+       "moisture — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Нут · 8+ мм",
+      "en": "Chickpeas · 8+ mm"
+     },
+     "prices": {
+      "zagotzerno": null,
+      "yaryzhki": 56650,
+      "solodchinskoe": null,
+      "borelskiy": 56450,
+      "arkadak": null,
+      "petrovskie-hleba": 56380,
+      "tandem": null,
+      "girey": 56340,
+      "veles": null,
+      "bukanovskoe-hpp": 56180,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": 56260,
+      "duet": null,
+      "diona": 56540
+     }
+    },
+    {
+     "id": "pulses-4",
+     "name": {
+      "ru": "Нут 7–8 мм",
+      "en": "Chickpeas 7–8 mm"
+     },
+     "sub": {
+      "ru": "калибровка по контракту",
+      "en": "calibration as per contract"
+     },
+     "spec": {
+      "ru": [
+       "калибр 7–8 мм",
+       "цвет / повреждение — по спецификации",
+       "влажность — по спецификации"
+      ],
+      "en": [
+       "calibre 7–8 mm",
+       "colour / damage — as per specification",
+       "moisture — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Нут · 7–8 мм",
+      "en": "Chickpeas · 7–8 mm"
+     },
+     "prices": {
+      "zagotzerno": 54800,
+      "yaryzhki": 54650,
+      "solodchinskoe": 54550,
+      "borelskiy": 54450,
+      "arkadak": 54300,
+      "petrovskie-hleba": 54380,
+      "tandem": 54500,
+      "girey": 54340,
+      "veles": 54420,
+      "bukanovskoe-hpp": 54180,
+      "oktyabrskoe-hpp": 54090,
+      "podgorenskiy": 54260,
+      "duet": 54210,
+      "diona": 54540
+     }
+    },
+    {
+     "id": "pulses-5",
+     "name": {
+      "ru": "Нут некалиброванный",
+      "en": "Chickpeas ungraded"
+     },
+     "sub": {
+      "ru": "по согласованию",
+      "en": "subject to agreement"
+     },
+     "spec": {
+      "ru": [
+       "калибровка по анализу",
+       "окончательная цена после лаборатории"
+      ],
+      "en": [
+       "calibration based on analysis",
+       "final price after laboratory analysis"
+      ]
+     },
+     "spec_title": {
+      "ru": "Нут некалиброванный",
+      "en": "Chickpeas ungraded"
+     },
+     "prices": {
+      "zagotzerno": 51600,
+      "yaryzhki": 51450,
+      "solodchinskoe": 51350,
+      "borelskiy": 51250,
+      "arkadak": 51100,
+      "petrovskie-hleba": 51180,
+      "tandem": 51300,
+      "girey": 51140,
+      "veles": 51220,
+      "bukanovskoe-hpp": 50980,
+      "oktyabrskoe-hpp": 50890,
+      "podgorenskiy": 51060,
+      "duet": 51010,
+      "diona": 51340
+     }
+    },
+    {
+     "id": "pulses-6",
+     "name": {
+      "ru": "По согласованию",
+      "en": "Subject to agreement"
+     },
+     "sub": {
+      "ru": "индивидуальная оценка партии",
+      "en": "individual lot assessment"
+     },
+     "spec": {
+      "ru": [
+       "индивидуальная оценка партии",
+       "условия подтверждает закупщик"
+      ],
+      "en": [
+       "individual lot assessment",
+       "terms confirmed by procurement manager"
+      ]
+     },
+     "spec_title": {
+      "ru": "Горох / нут · по согласованию",
+      "en": "Peas / chickpeas · subject to agreement"
+     },
+     "prices": {
+      "zagotzerno": 22000,
+      "yaryzhki": 21850,
+      "solodchinskoe": 21750,
+      "borelskiy": 21650,
+      "arkadak": 21500,
+      "petrovskie-hleba": 21580,
+      "tandem": 21700,
+      "girey": 21540,
+      "veles": 21620,
+      "bukanovskoe-hpp": 21380,
+      "oktyabrskoe-hpp": 21290,
+      "podgorenskiy": 21460,
+      "duet": 21410,
+      "diona": 21740
+     }
+    }
+   ]
+  },
+  {
+   "id": "oil",
+   "label": {
+    "ru": "Лён / рапс / сафлор",
+    "en": "Flax / rapeseed / safflower"
+   },
+   "qualities": [
+    {
+     "id": "oil-1",
+     "name": {
+      "ru": "Лён масличный",
+      "en": "Oilseed flax"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "масличность / влажность / сорность — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "oil content / moisture / foreign matter — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Лён масличный",
+      "en": "Oilseed flax"
+     },
+     "prices": {
+      "zagotzerno": 31800,
+      "yaryzhki": null,
+      "solodchinskoe": null,
+      "borelskiy": 31450,
+      "arkadak": null,
+      "petrovskie-hleba": null,
+      "tandem": 31500,
+      "girey": null,
+      "veles": null,
+      "bukanovskoe-hpp": 31180,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": null,
+      "duet": 31210,
+      "diona": null
+     }
+    },
+    {
+     "id": "oil-2",
+     "name": {
+      "ru": "Рапс",
+      "en": "Rapeseed"
+     },
+     "sub": {
+      "ru": "масличность по спецификации",
+      "en": "oil content as per specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "масличность — по спецификации",
+       "влажность / сорность — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "oil content — as per specification",
+       "moisture / foreign matter — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Рапс",
+      "en": "Rapeseed"
+     },
+     "prices": {
+      "zagotzerno": 34200,
+      "yaryzhki": null,
+      "solodchinskoe": null,
+      "borelskiy": 33850,
+      "arkadak": null,
+      "petrovskie-hleba": null,
+      "tandem": 33900,
+      "girey": null,
+      "veles": null,
+      "bukanovskoe-hpp": 33580,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": null,
+      "duet": 33610,
+      "diona": null
+     }
+    },
+    {
+     "id": "oil-3",
+     "name": {
+      "ru": "Сафлор",
+      "en": "Safflower"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "масличность / влажность / сорность — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "oil content / moisture / foreign matter — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Сафлор",
+      "en": "Safflower"
+     },
+     "prices": {
+      "zagotzerno": 28600,
+      "yaryzhki": null,
+      "solodchinskoe": null,
+      "borelskiy": 28250,
+      "arkadak": null,
+      "petrovskie-hleba": null,
+      "tandem": 28300,
+      "girey": null,
+      "veles": null,
+      "bukanovskoe-hpp": 27980,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": null,
+      "duet": 28010,
+      "diona": null
+     }
+    },
+    {
+     "id": "oil-4",
+     "name": {
+      "ru": "Горчица белая",
+      "en": "White mustard"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "чистота / влажность — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "purity / moisture — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Горчица белая",
+      "en": "White mustard"
+     },
+     "prices": {
+      "zagotzerno": 30500,
+      "yaryzhki": null,
+      "solodchinskoe": null,
+      "borelskiy": 30150,
+      "arkadak": null,
+      "petrovskie-hleba": null,
+      "tandem": 30200,
+      "girey": null,
+      "veles": null,
+      "bukanovskoe-hpp": 29880,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": null,
+      "duet": 29910,
+      "diona": null
+     }
+    },
+    {
+     "id": "oil-5",
+     "name": {
+      "ru": "Горчица чёрная",
+      "en": "Black mustard"
+     },
+     "sub": {
+      "ru": "по согласованной спецификации",
+      "en": "as per agreed specification"
+     },
+     "spec": {
+      "ru": [
+       "урожай 2025",
+       "чистота / влажность — по спецификации"
+      ],
+      "en": [
+       "crop 2025",
+       "purity / moisture — as per specification"
+      ]
+     },
+     "spec_title": {
+      "ru": "Горчица чёрная",
+      "en": "Black mustard"
+     },
+     "prices": {
+      "zagotzerno": 32100,
+      "yaryzhki": null,
+      "solodchinskoe": null,
+      "borelskiy": 31750,
+      "arkadak": null,
+      "petrovskie-hleba": null,
+      "tandem": 31800,
+      "girey": null,
+      "veles": null,
+      "bukanovskoe-hpp": 31480,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": null,
+      "duet": 31510,
+      "diona": null
+     }
+    },
+    {
+     "id": "oil-6",
+     "name": {
+      "ru": "По согласованию",
+      "en": "Subject to agreement"
+     },
+     "sub": {
+      "ru": "индивидуальная оценка партии",
+      "en": "individual lot assessment"
+     },
+     "spec": {
+      "ru": [
+       "индивидуальная оценка партии",
+       "условия подтверждает закупщик"
+      ],
+      "en": [
+       "individual lot assessment",
+       "terms confirmed by procurement manager"
+      ]
+     },
+     "spec_title": {
+      "ru": "Масличные · по согласованию",
+      "en": "Oilseeds · subject to agreement"
+     },
+     "prices": {
+      "zagotzerno": 29900,
+      "yaryzhki": null,
+      "solodchinskoe": null,
+      "borelskiy": 29550,
+      "arkadak": null,
+      "petrovskie-hleba": null,
+      "tandem": 29600,
+      "girey": null,
+      "veles": null,
+      "bukanovskoe-hpp": 29280,
+      "oktyabrskoe-hpp": null,
+      "podgorenskiy": null,
+      "duet": 29310,
+      "diona": null
+     }
+    }
+   ]
+  }
+ ],
+ "home_mode": "quiz",
+ "season": "2026/27"
+}
