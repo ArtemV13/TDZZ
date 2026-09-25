@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="{{ page_class }}" data-home="{{ home_mode }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{{ page.title }}</title>
+<meta name="description" content="{{ page.description }}">
+{% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% endif %}
+<link rel="icon" href="{{ root }}assets/logo-symbol.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ root }}logo-mark.png">
+<link rel="canonical" href="{{ site.domain }}/{{ page.url }}">
+<link rel="alternate" hreflang="ru" href="{{ site.domain }}/{{ page.url_ru }}">
+<link rel="alternate" hreflang="en" href="{{ site.domain }}/{{ page.url_en }}">
+<link rel="alternate" hreflang="x-default" href="{{ site.domain }}/{{ page.url_ru }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ T.brand }}">
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="{{ site.domain }}/{{ page.url }}">
+<meta property="og:image" content="{{ site.domain }}/assets/home-hero-integrated.webp">
+<meta property="og:locale" content="{{ 'ru_RU' if lang == 'ru' else 'en_US' }}">
+<meta name="theme-color" content="#0D2B25">
+<link rel="preload" href="{{ root }}assets/fonts/golos-text-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ root }}assets/fonts/golos-text-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="{{ root }}assets/site.css?v={{ build_hash }}">
+<script>window.TDZZ={root:"{{ root }}",lang:"{{ lang }}",whatsapp:"{{ site.whatsapp }}",telegram:"{{ site.telegram }}",email:"{{ site.email }}"};</script>
+<script type="application/ld+json">{{ jsonld|safe }}</script>
+</head>
+<body class="{{ page_class }}">
+{% include "partials/icons.html" %}
+{% include "partials/header.html" %}
+{{ content|safe }}
+{% include "partials/footer.html" %}
+<script src="{{ root }}assets/site.js?v={{ build_hash }}" defer></script>
+{% if page.name == 'index' %}<script type="application/json" id="pricesData">{{ prices_json|safe }}</script>
+<script src="{{ root }}assets/prices.js?v={{ build_hash }}" defer></script>
+<script type="application/json" id="quizData">{{ quiz_json|safe }}</script>
+<script src="{{ root }}assets/quiz.js?v={{ build_hash }}" defer></script>
+<script type="application/json" id="passportData">{{ passport_json|safe }}</script>
+<script src="{{ root }}assets/passport.js?v={{ build_hash }}" defer></script>{% endif %}
+{% if site.metrika_id %}
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id={{ site.metrika_id }}', 'ym');
+
+    ym({{ site.metrika_id }}, 'init', {ssr:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    window.TDZZ_METRIKA={{ site.metrika_id }};
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/{{ site.metrika_id }}" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+{% endif %}
+{% if site.ga_id %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_id }}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','{{ site.ga_id }}');</script>
+{% endif %}
+</body>
+</html>

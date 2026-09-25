@@ -1,0 +1,68 @@
+{
+  "_comment": "Квиз «Продать зерно за 5 вопросов». Тексты RU/EN. Варианты объёма и регионов редактируются здесь.",
+  "manager": {"initials": "ИК", "name": {"ru": "Ирина Кравцова", "en": "Irina Kravtsova"}, "role": {"ru": "закупщик, Волгоградская обл.", "en": "buyer, Volgograd region"}},
+  "questions": [
+    {"key": "crops", "multi": true, "icon": true,
+     "label": {"ru": "Культуры", "en": "Crops"},
+     "q": {"ru": "Что продаёте в этом сезоне?", "en": "What are you selling this season?"},
+     "sub": {"ru": "Можно выбрать несколько культур — под каждую подберём свой элеватор и своего закупщика.", "en": "Select several crops if needed — each gets its own elevator and buyer."},
+     "options": [
+       {"v": "wheat", "icon": "wheat", "t": {"ru": "Пшеница", "en": "Wheat"}, "s": {"ru": "3–4 класс, фуражная", "en": "class 3–4, feed"}},
+       {"v": "barley", "icon": "barley", "t": {"ru": "Ячмень", "en": "Barley"}, "s": {"ru": "фуражный, пивоваренный", "en": "feed, malting"}},
+       {"v": "corn", "icon": "corn", "t": {"ru": "Кукуруза", "en": "Corn"}, "s": {"ru": "с октября, сушим", "en": "from October, drying available"}},
+       {"v": "sunflower", "icon": "sunflower", "t": {"ru": "Подсолнечник", "en": "Sunflower seed"}, "s": {"ru": "масличность от 44%", "en": "oil content from 44%"}},
+       {"v": "pulses", "icon": "pulses", "t": {"ru": "Горох · нут", "en": "Peas · chickpeas"}, "s": {"ru": "по калибровке", "en": "by calibration"}},
+       {"v": "oil", "icon": "oil", "t": {"ru": "Лён · рапс · сафлор", "en": "Flax · rapeseed · safflower"}, "s": {"ru": "по спецификации", "en": "to specification"}}
+     ]},
+    {"key": "volume", "cols": 5,
+     "label": {"ru": "Объём", "en": "Volume"},
+     "q": {"ru": "Какой объём готовы продать?", "en": "What volume are you ready to sell?"},
+     "sub": {"ru": "Ориентировочно — точный тоннаж уточним при отгрузке.", "en": "Approximately — exact tonnage is confirmed at dispatch."},
+     "options": [
+       {"v": "до 500 т", "t": {"ru": "до 500 т", "en": "up to 500 t"}, "s": {"ru": "автопартия", "en": "truck lots"}},
+       {"v": "500–1 000 т", "t": {"ru": "500–1 000 т", "en": "500–1,000 t"}, "s": {"ru": "", "en": ""}},
+       {"v": "1 000–4 000 т", "t": {"ru": "1 000–4 000 т", "en": "1,000–4,000 t"}, "s": {"ru": "вагонная партия", "en": "rail lot"}},
+       {"v": "4 000–10 000 т", "t": {"ru": "4 000–10 000 т", "en": "4,000–10,000 t"}, "s": {"ru": "маршрут", "en": "unit train"}},
+       {"v": "10 000+ т", "t": {"ru": "10 000+ т", "en": "10,000+ t"}, "s": {"ru": "судовая партия", "en": "vessel lot"}}
+     ]},
+    {"key": "quality", "cols": 3,
+     "label": {"ru": "Качество", "en": "Quality"},
+     "q": {"ru": "Знаете качество партии?", "en": "Do you know the lot quality?"},
+     "sub": {"ru": "Если есть протокол лаборатории — цена будет точнее. Если нет — определим на элеваторе бесплатно.", "en": "A lab report makes the price more precise. If you don't have one, we test at the elevator free of charge."},
+     "options": [
+       {"v": "lab", "t": {"ru": "Есть анализ лаборатории", "en": "I have a lab report"}, "s": {"ru": "прикрепите протокол — посчитаем точнее", "en": "attach the report for a precise price"}},
+       {"v": "approx", "t": {"ru": "Знаю примерно", "en": "I know roughly"}, "s": {"ru": "укажите показатели, какие знаете", "en": "enter the parameters you know"}},
+       {"v": "none", "t": {"ru": "Нужна лаборатория", "en": "Need lab testing"}, "s": {"ru": "проверим при приёмке", "en": "we test at intake"}}
+     ]},
+    {"key": "region", "cols": 3,
+     "label": {"ru": "Регион", "en": "Region"},
+     "q": {"ru": "Где находится партия?", "en": "Where is the lot located?"},
+     "sub": {"ru": "Подберём ближайшую из 14 площадок и посчитаем расстояние.", "en": "We'll pick the nearest of 14 sites and calculate the distance."},
+     "options": [
+       {"v": "Волгоградская обл.", "t": {"ru": "Волгоградская обл.", "en": "Volgograd region"}, "s": {"ru": "7 площадок", "en": "7 sites"}},
+       {"v": "Саратовская обл.", "t": {"ru": "Саратовская обл.", "en": "Saratov region"}, "s": {"ru": "Аркадак, Петровские хлеба", "en": "Arkadak, Petrovskiye Khleba"}},
+       {"v": "Краснодарский край", "t": {"ru": "Краснодарский край", "en": "Krasnodar region"}, "s": {"ru": "Тандем, Гирей", "en": "Tandem, Girey"}},
+       {"v": "Воронежская / Тамбовская", "t": {"ru": "Воронежская / Тамбовская", "en": "Voronezh / Tambov"}, "s": {"ru": "Подгоренский, Велес", "en": "Podgorensky, Veles"}},
+       {"v": "Ростовская обл.", "t": {"ru": "Ростовская обл.", "en": "Rostov region"}, "s": {"ru": "порт «Диона»", "en": "Diona port elevator"}},
+       {"v": "Другой регион", "t": {"ru": "Другой регион", "en": "Other region"}, "s": {"ru": "подберём вариант", "en": "we'll find an option"}}
+     ]},
+    {"key": "when", "cols": 4,
+     "label": {"ru": "Отгрузка", "en": "Dispatch"},
+     "q": {"ru": "Когда готовы отгружать?", "en": "When are you ready to ship?"},
+     "sub": {"ru": "От этого зависит, какую программу закупки предложим.", "en": "This determines which procurement programme we offer."},
+     "options": [
+       {"v": "Прямо сейчас", "t": {"ru": "Прямо сейчас", "en": "Right now"}, "s": {"ru": "зерно на току", "en": "grain on the floor"}},
+       {"v": "В течение 2 недель", "t": {"ru": "В течение 2 недель", "en": "Within 2 weeks"}, "s": {"ru": "", "en": ""}},
+       {"v": "В течение месяца", "t": {"ru": "В течение месяца", "en": "Within a month"}, "s": {"ru": "", "en": ""}},
+       {"v": "После уборки", "t": {"ru": "После уборки", "en": "After harvest"}, "s": {"ru": "планирую заранее", "en": "planning ahead"}}
+     ]}
+  ],
+  "near": {
+    "Волгоградская обл.": [["Ярыжки", "ж/д · лаборатория"], ["Заготзерно", "сушка · ж/д"], ["Букановское ХПП", "хранение"]],
+    "Саратовская обл.": [["Аркадак", "ж/д"], ["Петровские хлеба", "приёмка"], ["Велес", "Тамбовская обл."]],
+    "Краснодарский край": [["Тандем", "сушка"], ["Гирей", "приёмка"], ["Диона", "порт, Ростов-на-Дону"]],
+    "Воронежская / Тамбовская": [["Подгоренский элеватор", "Воронежская обл."], ["Велес", "Тамбовская обл."], ["Аркадак", "Саратовская обл."]],
+    "Ростовская обл.": [["Диона", "портовый элеватор"], ["Тандем", "Краснодарский край"], ["Октябрьское ХПП", "Волгоградская обл."]],
+    "Другой регион": [["Заготзерно", "Волгоград"], ["Диона", "порт, Ростов-на-Дону"], ["Аркадак", "Саратовская обл."]]
+  }
+}

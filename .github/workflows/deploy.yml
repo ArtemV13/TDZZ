@@ -1,3 +1,13 @@
+# Сборка и выкладка сайта на хостинг (Timeweb) при каждом push в main.
+#
+# Секреты репозитория (Settings → Secrets and variables → Actions):
+#   SSH_HOST      — хост SSH из панели Timeweb (например, vh123.timeweb.ru)
+#   SSH_USER      — логин хостинга (например, cv12345)
+#   SSH_KEY       — приватный ключ (публичный добавлен в панели Timeweb → SSH-ключи)
+#   REMOTE_PATH   — путь к корню сайта на сервере (например, /home/c/cv12345/tdzz.ru/public_html)
+#
+# На сервере НЕ трогаются: data/ (цены из админки, заявки, вложения) и api/config.php.
+# Они заливаются только один раз — если файла ещё нет.
 name: Deploy to hosting
 
 on:
@@ -21,8 +31,9 @@ jobs:
 
       - name: Build
         run: |
-          pip install jinja2 pillow
+          pip install -r requirements.txt
           python3 build.py
+          # config.php в репозитории нет — на сервер уйдёт пример (только если там ещё нет настоящего)
           cp static/api/config.example.php dist/api/config.php
 
       - name: Setup SSH
@@ -34,10 +45,16 @@ jobs:
 
       - name: Upload site (rsync)
         run: |
+          # 1) всё, кроме данных и конфига — с удалением устаревших файлов
           rsync -az --delete \
             --exclude 'data/' --exclude 'api/config.php' \
             dist/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}/"
+          # 2) данные и конфиг — только если на сервере их ещё нет
           rsync -az --ignore-existing \
             dist/data/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}/data/"
           rsync -az --ignore-existing \
             dist/api/config.php "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.REMOTE_PATH }}/api/config.php"
+
+      - name: Smoke check
+        run: |
+          curl -sSf -o /dev/null -w "tdzz.ru: %{http_code}\n" https://tdzz.ru/ || true

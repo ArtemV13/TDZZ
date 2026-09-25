@@ -1,0 +1,10 @@
+<footer class="footer footer-v17"><div class="footer-main"><div class="wrap">
+<div class="footer-v17__top"><div class="footer-v17__brand"><a class="brand" href="index.html" aria-label="{{ T.brand_aria }}"><img class="brand-mark" src="{{ root }}assets/logo-symbol.svg" alt="" aria-hidden="true" width="38" height="38"><span class="brand-wordmark"><b>{{ T.brand }}</b><span class="brand-descriptor">{{ T.descriptor }}</span></span></a><p>{{ T.footer_tagline }}</p></div>
+<div class="footer-v17__contact"><small>{{ T.footer_contact }}</small><a href="{{ site.phone_href }}">{{ site.phone }}</a><a href="mailto:{{ site.email }}">{{ site.email }}</a></div></div>
+<div class="footer-v17__body">
+<nav class="footer-v17__col" aria-label="{{ T.footer_nav_aria }}"><h4>{{ T.footer_nav }}</h4>{% for href, label in T.nav %}<a href="{{ href }}">{{ label }}</a>{% endfor %}</nav>
+<div class="footer-v17__col"><h4>{{ T.footer_docs }}</h4><a href="{{ root }}{{ T.presentation_file }}">{{ T.doc_presentation }}</a><a href="{{ root }}assets/TDZZ_company_details.docx">{{ T.doc_details }}</a><a href="{{ root }}assets/TDZZ_KYC_Questionnaire.docx">{{ T.doc_kyc }}</a></div>
+<div class="footer-v17__col footer-v17__membership"><h4>{{ T.footer_membership }}</h4><p>{{ T.footer_membership_text }}</p><a class="rusgrain-badge" href="https://rusgrain.org/" target="_blank" rel="noopener" aria-label="{{ T.rusgrain_alt }}"><img src="{{ root }}{{ T.rusgrain_img }}" alt="{{ T.rusgrain_alt }}" loading="lazy"></a></div>
+</div>
+<div class="footer-v17__bottom"><span>{{ T.copyright.replace('{year}', year) }}</span><div><span>{{ T.no_offer }}</span><a href="privacy.html">{{ T.privacy }}</a></div></div>
+</div></div></footer>

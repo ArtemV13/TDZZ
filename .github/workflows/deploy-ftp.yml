@@ -1,0 +1,35 @@
+# Вариант выкладки по FTP/FTPS — если на тарифе Timeweb нет SSH.
+# Отключён по умолчанию (только ручной запуск). Чтобы использовать вместо deploy.yml:
+# удалите deploy.yml и замените здесь `workflow_dispatch:` на `push: {branches: [main]}`.
+#
+# Секреты: FTP_HOST, FTP_USER, FTP_PASSWORD, FTP_PATH (например, /tdzz.ru/public_html/)
+name: Deploy to hosting (FTP)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build
+        run: |
+          pip install -r requirements.txt
+          python3 build.py
+          # данные и конфиг по FTP не заливаем — они живут на сервере (первый раз загрузите вручную)
+          rm -rf dist/data dist/api/config.php
+      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: dist/
+          server-dir: ${{ secrets.FTP_PATH }}
+          exclude: |
+            data/**
+            api/config.php

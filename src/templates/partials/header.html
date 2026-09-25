@@ -1,0 +1,9 @@
+<header class="header"><div class="wrap navbar nav v15-nav">
+<a class="brand" href="{{ root }}{{ 'en/' if lang == 'en' else '' }}index.html" aria-label="{{ T.brand_aria }}"><img class="brand-mark" src="{{ root }}assets/logo-symbol.svg" alt="" aria-hidden="true" width="38" height="38"><span class="brand-wordmark"><b>{{ T.brand }}</b><span class="brand-descriptor">{{ T.descriptor }}</span></span></a>
+<nav class="navlinks menu" aria-label="{{ T.nav_aria }}">{% for href, label in T.nav %}<a href="{{ href }}"{% if href.split('#')[0] == page.name + '.html' %} class="active"{% endif %}>{{ label }}</a>{% endfor %}</nav>
+<div class="nav-actions">
+<div class="lang lang-v16" aria-label="Language"><a href="{{ root }}{{ page.url_ru }}"{% if lang == 'ru' %} class="active"{% endif %} hreflang="ru">RU</a><span class="lang-sep">/</span><a href="{{ root }}{{ page.url_en }}"{% if lang == 'en' %} class="active"{% endif %} hreflang="en">EN</a></div>
+<a class="btn btn--dark nav-cta" href="{{ T.cta_href }}">{{ T.cta }}</a>
+<button class="burger" id="burger" type="button" aria-label="{{ T.menu_aria }}" aria-expanded="false" aria-controls="mobileMenu"><svg class="icon bars" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="icon x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div></div></header>
+<div class="mobile-menu" id="mobileMenu">{% for href, label in T.nav %}<a href="{{ href }}">{{ label }} <span>→</span></a>{% endfor %}<div class="mobile-meta"><a href="{{ site.phone_href }}">{{ site.phone }}</a><a href="mailto:{{ site.email }}">{{ site.email }}</a></div></div>

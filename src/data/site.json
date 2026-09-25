@@ -1,0 +1,111 @@
+{
+  "domain": "https://tdzz.ru",
+  "phone": "+7 (8442) 59-97-32",
+  "phone_href": "tel:+78442599732",
+  "email": "info@tdzz.ru",
+  "address": {
+    "ru": "400087, Россия, г. Волгоград, ул. Пархоменко, 1А",
+    "en": "1A Parkhomenko St., Volgograd, 400087, Russia"
+  },
+  "geo": {
+    "lat": 48.71369,
+    "lon": 44.509296
+  },
+  "metrika_id": "112948732",
+  "ga_id": "",
+  "strings": {
+    "ru": {
+      "brand": "Зерно Заволжья",
+      "descriptor": "Торговый дом",
+      "brand_aria": "Зерно Заволжья — Торговый дом",
+      "nav_aria": "Основная навигация",
+      "menu_aria": "Меню",
+      "nav": [
+        [
+          "about.html",
+          "О компании"
+        ],
+        [
+          "index.html#prices",
+          "Закупка"
+        ],
+        [
+          "export.html",
+          "Экспорт"
+        ],
+        [
+          "contacts.html",
+          "Контакты"
+        ]
+      ],
+      "cta": "Продать зерно",
+      "cta_href": "index.html#lead",
+      "footer_tagline": "Закупка, хранение, железнодорожная логистика и экспорт сельскохозяйственной продукции.",
+      "footer_contact": "Коммерческий контакт",
+      "footer_nav_aria": "Навигация в подвале",
+      "footer_nav": "Навигация",
+      "footer_docs": "Документы",
+      "doc_presentation": "Презентация компании",
+      "doc_details": "Реквизиты",
+      "doc_kyc": "KYC-анкета",
+      "footer_membership": "Отраслевое участие",
+      "footer_membership_text": "Участник отраслевого объединения экспортёров и производителей зерна.",
+      "rusgrain_alt": "Союз экспортёров и производителей зерна",
+      "rusgrain_img": "assets/rusgrain-union-ru.png",
+      "copyright": "© {year} ООО «Торговый дом «Зерно Заволжья»",
+      "no_offer": "Информация на сайте не является публичной офертой",
+      "privacy": "Политика обработки персональных данных",
+      "org_name": "ООО «Торговый дом «Зерно Заволжья»",
+      "org_desc": "Закупка зерна, элеваторная сеть, железнодорожная логистика и экспорт сельскохозяйственной продукции.",
+      "presentation_file": "company-overview-2026-ru.pdf"
+    },
+    "en": {
+      "brand": "ZERNO ZAVOLZHYA",
+      "descriptor": "Trading House",
+      "brand_aria": "Zerno Zavolzhya — Trading House",
+      "nav_aria": "Main navigation",
+      "menu_aria": "Menu",
+      "nav": [
+        [
+          "about.html",
+          "About"
+        ],
+        [
+          "index.html#prices",
+          "Procurement"
+        ],
+        [
+          "export.html",
+          "Export"
+        ],
+        [
+          "contacts.html",
+          "Contacts"
+        ]
+      ],
+      "cta": "Sell grain",
+      "cta_href": "index.html#lead",
+      "footer_tagline": "Grain origination, storage, rail logistics and international exports.",
+      "footer_contact": "Commercial contact",
+      "footer_nav_aria": "Footer navigation",
+      "footer_nav": "Navigation",
+      "footer_docs": "Documents",
+      "doc_presentation": "Company presentation",
+      "doc_details": "Company details",
+      "doc_kyc": "KYC questionnaire",
+      "footer_membership": "Industry membership",
+      "footer_membership_text": "Member of the industry association of grain exporters and producers.",
+      "rusgrain_alt": "Union of Grain Exporters and Producers",
+      "rusgrain_img": "assets/rusgrain-union-en.png",
+      "copyright": "© {year} Zerno Zavolzhya Trading House LLC",
+      "no_offer": "Information on this website is not a public offer",
+      "privacy": "Privacy policy",
+      "org_name": "Zerno Zavolzhya Trading House LLC",
+      "org_desc": "Grain procurement, elevator network, rail logistics and international export.",
+      "presentation_file": "company-overview-2026-en.pdf"
+    }
+  },
+  "whatsapp": "",
+  "telegram": "",
+  "_comment_messengers": "whatsapp — номер менеджера для кнопки в квизе (например 79270000000), telegram — @username или имя бота. Пусто — кнопка не показывается."
+}

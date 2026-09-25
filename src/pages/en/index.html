@@ -1,0 +1,150 @@
+---
+{"title": "Zerno Zavolzhya — grain procurement, storage and export", "description": "Zerno Zavolzhya Trading House: grain procurement, elevator network, rail logistics and international export.", "robots": ""}
+---
+<main id="top">
+<section class="hero">
+<div aria-hidden="true" class="hero__scene"><img alt="" class="hero__photo" decoding="async" fetchpriority="high" src="{{ root }}assets/home-hero-integrated.webp"/></div>
+<div class="hero__shade"></div>
+<div class="wrap hero__in">
+<div class="hero__copy"><span class="hero__tag"><i></i>In market since 2003</span><h1>Grain. Infrastructure. Export.</h1><p class="hero__lead">Vertically integrated platform: origination from agricultural producers, storage and conditioning, rail logistics and deliveries to export markets.</p><div class="hero__actions"><a class="btn btn--gold" id="heroCta" href="#prices">Procurement prices <svg class="icon"><use href="#i-arrow"></use></svg></a></div></div>
+<aside class="hero-price" id="heroPrice" hidden><div class="hero-price__head"><span>Buying today</span><b id="heroPriceDate"></b></div><div id="heroPriceRows"></div></aside>
+</div>
+<div class="hero-stats"><div class="wrap hero-stats__in">
+<div class="hero-stat"><span class="hero-stat__kicker">Grain handled</span><b>4.0+ mt</b><small>handled in 2023/24 season</small></div>
+<div class="hero-stat"><span class="hero-stat__kicker">Storage</span><b>658,750 t</b><small>one-time storage capacity</small></div>
+<div class="hero-stat"><span class="hero-stat__kicker">Infrastructure</span><b>14</b><small>elevator sites</small></div>
+<div class="hero-stat"><span class="hero-stat__kicker">Export</span><b>35+</b><small>direct export markets</small></div>
+</div></div>
+</section>
+<section class="qz" id="quiz"><div class="qz__bg"></div><div class="qz__shade"></div><div class="wrap">
+<span class="eyebrow qz__eyebrow">Sell grain in 5 questions</span>
+<div class="qz__grid" id="qzQuiz">
+ <div>
+  <div class="qz__top"><span class="qz__step" id="qzStep"></span><div class="qz__prog"><i id="qzProg"></i></div><span class="qz__time" id="qzTime"></span></div>
+  <h2 id="qzQ"></h2><p class="qz__sub" id="qzSub"></p>
+  <div class="qz__cards" id="qzCards"></div>
+  <div class="qz__extra" id="qzExtra" hidden></div>
+  <div class="qz__nav"><button class="qz__back" id="qzBack" type="button">← Back</button><button class="btn btn--gold" id="qzNext" type="button">Next <svg class="icon"><use href="#i-arrow"></use></svg></button><span class="qz__hint">or press <kbd>Enter</kbd></span></div>
+ </div>
+ <aside class="qs">
+  <div class="qs__mgr"><div class="qs__ava" id="qzAva"></div><div><b id="qzMgr"></b><span id="qzMgrRole"></span></div></div>
+  <div class="qs__title">Building your enquiry</div>
+  <div class="qs__list" id="qzList"></div>
+  <div class="qs__get"><p><b>At the end you get:</b> a price for each crop based on quality, the nearest elevator and advice on what would raise the class.</p>
+  <span class="qs__badge"><i></i><span id="qzBadge">We reply within 15 minutes during business hours</span></span></div>
+ </aside>
+</div>
+<div class="qf" id="qzFinish" hidden>
+ <div>
+  <div class="qf__done"><i>✓</i>5 of 5 · enquiry ready</div>
+  <h2><span id="qzMgrFirst"></span> can already see your lot. Where should we call?</h2>
+  <p class="qz__sub">The manager will price your lot by quality and confirm intake at the nearest site. No mailings — one call or message.</p>
+  <div class="qf__sum" id="qzSum"></div>
+  <div class="qf__while"><h4>While you wait — nearest sites</h4><div class="qf__near" id="qzNear"></div></div>
+  <p class="qf__edit"><a href="#" id="qzRestart">← Change answers</a></p>
+ </div>
+ <form class="qfc" id="qzForm" novalidate>
+  <h3>We'll call within 15 minutes</h3><p>During business hours 8:00–18:00 MSK. At night and on weekends we'll message you in the morning.</p>
+  <label>Your phone<input class="input" id="qzPhone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" required></label>
+  <label>Your name<input class="input" id="qzName" name="name" placeholder="Name, farm"></label>
+  <label class="check qfc__check"><input type="checkbox" name="privacy" required checked><span>I agree to the <a href="privacy.html">privacy policy</a></span></label>
+  <button class="btn btn--gold" type="submit">Call me <svg class="icon"><use href="#i-arrow"></use></svg></button>
+  <div class="qfc__or"><span>or via messenger</span></div>
+  <div class="qfc__msg"><a class="wa" id="qzWa" href="#" target="_blank" rel="noopener">WhatsApp</a><a class="tg" id="qzTg" href="#" target="_blank" rel="noopener">Telegram</a></div>
+  <small>The price is indicative; the final price follows lab analysis at the elevator.</small>
+  <div class="qfc__ok" id="qzOk"><i>✓</i><b>Sent to the manager</b><span id="qzOkText"></span></div>
+ </form>
+</div>
+</div></section>
+<section class="section pp-section" id="passport"><div class="wrap">
+<div class="cx__head"><div><span class="eyebrow">For producers</span><h2>Assess your lot in&nbsp;60&nbsp;seconds</h2></div><p class="lead">Pick a crop and move the sliders — see the grade, what keeps you from a higher one and where to deliver. A manager will price the finished passport.</p></div>
+<div class="pp">
+ <div class="pp__panel">
+  <div class="pp__steps" id="ppSteps"><span class="on" data-step="1">1 · Crop</span><span data-step="2">2 · Quality</span><span data-step="3">3 · Region</span><span data-step="4">4 · Price</span></div>
+  <div class="pp__pane" data-pane="1"><div class="qz__cards cols-4 pp__crops" id="ppCrops"></div></div>
+  <div class="pp__pane" data-pane="2" hidden><div id="ppSliders"></div></div>
+  <div class="pp__pane" data-pane="3" hidden>
+   <label class="pp__f"><span>Lot region</span><select class="input" id="ppRegion"></select></label>
+   <label class="pp__f"><span>Lot volume, t</span><input class="input" id="ppVolume" type="number" inputmode="numeric" placeholder="400"></label>
+   <div class="pp__f"><span>Our sites in your region</span><div class="near" id="ppNear"></div></div>
+  </div>
+  <div class="pp__pane" data-pane="4" hidden><p class="pp__note">The passport is ready — see it on the right. Leave your phone and the manager will price this exact lot.</p></div>
+  <div class="verdict" id="ppVerdict" hidden><div class="cls"><small>Grade</small><span id="ppClass"></span></div><ul id="ppNotes"></ul></div>
+  <div class="pp__nav"><button type="button" class="qz__back pp__back" id="ppBack">← Back</button><button type="button" class="btn btn--gold" id="ppNext">Next <svg class="icon"><use href="#i-arrow"></use></svg></button></div>
+ </div>
+ <aside class="card"><span class="card__eyebrow">Lot passport · draft</span><h3 id="ppTitle"></h3>
+  <dl id="ppParams"></dl>
+  <div class="el" id="ppEl" hidden></div>
+  <p class="card__hint" id="ppHint"></p>
+  <form class="card__form" id="ppForm" hidden novalidate>
+   <label>Phone<input class="input" id="ppPhone" name="phone" type="tel" placeholder="+7 ___ ___-__-__" required></label>
+   <label>Your name<input class="input" id="ppName" name="name" placeholder="Name, farm"></label>
+   <label class="check card__check"><input type="checkbox" name="privacy" required checked><span>I agree to the <a href="privacy.html">privacy policy</a></span></label>
+   <button class="btn btn--gold" type="submit">Get a price for this lot <svg class="icon"><use href="#i-arrow"></use></svg></button>
+   <div class="qfc__ok card__ok" id="ppOk"><i>✓</i><b>Sent to the manager</b><span id="ppOkText"></span></div>
+  </form>
+ </aside>
+</div></div></section>
+<section class="section prices section--white" id="prices"><div class="wrap"><div class="shead"><div><span class="eyebrow">For producers</span><h2>See the price at your elevator</h2></div><p class="lead">Compare crops, quality, delivery basis and receiving point. Select a price and the enquiry form will be pre-filled.</p></div>
+<div class="price-shell"><div class="price-head"><div class="live"><i></i><span><b>Prices as of <time id="pricesUpdated">today</time></b><small>Final price availability is confirmed by a manager before contracting</small></span></div><div class="segment" id="basisToggle" style="display:none"><button class="active" data-basis="cpt">CPT elevator</button></div><div class="segment" id="vatToggle"><button class="active" data-vat="0">excl. VAT</button><button data-vat="10">incl. VAT</button></div><select class="select" id="regionSelect"><option value="all">All regions</option><option>Volgograd region</option><option>Saratov region</option><option>Krasnodar region</option><option>Tambov region</option><option>Voronezh region</option><option>Rostov-on-Don</option></select></div>
+<div class="price-toolbar price-toolbar--compact"><div class="crop-tabs-wrap"><div class="tabs" id="cropTabs"><button class="tab active" data-crop="wheat" type="button">Wheat</button><button class="tab" data-crop="barley" type="button">Barley</button><button class="tab" data-crop="corn" type="button">Corn</button><button class="tab" data-crop="sunflower" type="button">Sunflower seed</button><button class="tab" data-crop="pulses" type="button">Peas / chickpeas</button><button class="tab" data-crop="oil" type="button">Flax / rapeseed / safflower</button></div></div>
+<div aria-label="Table scroll" class="price-scroll-tools">
+<span>Elevators</span>
+<button aria-label="Scroll table left" id="scrollLeft" type="button">←</button>
+<button aria-label="Scroll table right" id="scrollRight" type="button">→</button>
+</div>
+</div><div aria-live="polite" class="quality-popover" id="qualityPopover"><button aria-label="Close" class="quality-popover__close" id="qualityClose" type="button">×</button><span class="quality-popover__eyebrow">Quality requirements</span><div class="quality-popover__head"><b id="qualityTitle">Wheat</b><small>working intake specification</small></div><div class="quality-tags" id="qualityTags"></div><p id="qualityNote"></p></div>
+<div class="matrix-scroller" id="matrixScroller"><div class="matrix-wrap" id="matrixWrap"><table class="matrix" id="priceTable"></table></div></div><div aria-live="polite" class="inline-selection" id="inlineSelection">
+<div><span>Selected</span><b id="inlineTitle">Zagotzerno · Wheat 12.5%</b><small id="inlineMeta">CPT elevator · excl. VAT</small></div>
+<strong id="inlinePrice">24 100 RUB/t</strong>
+<a class="btn btn--dark" href="#lead">Send enquiry <svg class="icon"><use href="#i-arrow"></use></svg></a>
+<button aria-label="Clear selection" class="inline-close" id="inlineClose" type="button">×</button>
+</div><div class="price-foot"><span>Basis CPT elevator · RUB/t · final price after laboratory analysis.</span><a href="#lead" style="font-weight:600;text-decoration:none">Procurement terms and enquiry →</a></div></div>
+</div></section>
+<section class="section v7-services" id="company"><div class="wrap">
+<div class="v7-services-head"><div><span class="eyebrow">Core businesses</span><h2>Six capabilities. One operating platform.</h2></div><a href="about.html">How the group works <span>→</span></a></div>
+<div class="v7-service-grid">
+<article class="v7-service"><span class="v7-service__no">01</span><span class="v7-service__icon"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M8 25V10m0 3c-3.7 0-5.5-1.8-5.5-5.2C6.2 7.8 8 9.6 8 13Zm0 5c3.7 0 5.5-1.8 5.5-5.2C9.8 12.8 8 14.6 8 18Zm8-8v15m0-11c-3.2 0-4.8-1.6-4.8-4.5 3.2 0 4.8 1.6 4.8 4.5Zm0 5c3.2 0 4.8-1.6 4.8-4.5-3.2 0-4.8 1.6-4.8 4.5Z"/><path d="M21.5 22.5h7m-2.7-2.7 2.7 2.7-2.7 2.7M28.5 9.5h-7m2.7-2.7-2.7 2.7 2.7 2.7"/></svg></span><h3>Grain trading</h3><p>Procurement and sales of grains, oilseeds, pulses and industrial crops.</p><a href="#prices">Procurement prices →</a></article>
+<article class="v7-service"><span class="v7-service__no">02</span><span class="v7-service__icon"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M4 27h24M6 27V12h6v15M13 27V8h6v19M20 27V11h6v16M6 12l3-4 3 4M13 8l3-4 3 4M20 11l3-4 3 4"/><path d="M8.5 18h1M15.5 15h1M22.5 17h1"/></svg></span><h3>Elevator services</h3><p>Intake, storage, conditioning, drying and dispatch across 14 sites.</p><a href="about.html#assets">Infrastructure →</a></article>
+<article class="v7-service"><span class="v7-service__no">03</span><span class="v7-service__icon"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M5 7h22v14H5zM5 13h22M9 21l-2 5m16-5 2 5M9 26h14"/><circle cx="10" cy="10" r="1.4"/><circle cx="22" cy="10" r="1.4"/><path d="M10 17h12"/></svg></span><h3>Rail forwarding</h3><p>Railcar dispatch and delivery to port terminals.</p><a href="about.html#logistics">Logistics →</a></article>
+<article class="v7-service"><span class="v7-service__no">04</span><span class="v7-service__icon"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M4 25c4-8.8 10-14.2 24-16M4 25h24M8 21c4.5-.2 8.5.7 12 3"/><path d="M14 14c-2.8-.4-4.5-2-5-4.7 3.1.1 4.9 1.7 5 4.7Zm4-2c2.7-.6 4.1-2.2 4.2-4.8-2.9.3-4.3 1.9-4.2 4.8Z"/></svg></span><h3>Crop production</h3><p>134,000+ ha farmed by producers within the group in key origination regions.</p><a href="about.html#production">Production →</a></article>
+<article class="v7-service"><span class="v7-service__no">05</span><span class="v7-service__icon"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M5 27V12l11-7 11 7v15M10 27V16h12v11M10 13h12"/><path d="M16 16v11M12 20h8M12 24h8"/><circle cx="16" cy="10" r="1.4"/></svg></span><h3>Flour milling</h3><p>Production and sale of flour and other milling products.</p><a href="about.html#production">Learn more →</a></article>
+<article class="v7-service v7-service--accent"><span class="v7-service__no">06</span><span class="v7-service__icon"><svg aria-hidden="true" viewBox="0 0 32 32"><path d="M4 24h24M7 24l2-8h14l2 8M11 16V8h10v8M13 8V5h6v3"/><path d="M5 27c2 1.5 4 1.5 6 0 2 1.5 4 1.5 6 0 2 1.5 4 1.5 6 0 2 1.5 4 1.5 6 0M22 10h5v6"/></svg></span><h3>Port infrastructure</h3><p>A port elevator in Rostov-on-Don and access to the Azov–Black Sea export corridor.</p><a href="export.html">Export →</a></article>
+</div></div></section>
+<section class="section map-section section--ink" id="map"><div class="wrap"><div class="shead"><div><span class="eyebrow">Infrastructure</span><h2>A network across key origination regions.</h2></div><p class="lead">Most sites are concentrated within roughly 500 km of Volgograd and connected by rail to export terminals in the Azov–Black Sea basin.</p></div>
+<div class="map-shell"><div class="map-top"><b>Elevators and loading ports</b><div class="legend"><span><i style="background:#123c31;border:2px solid #d9b24c;border-radius:50% 50% 50% 0;width:12px;height:12px;transform:rotate(-45deg)"></i>Elevators</span><span><i style="background:#5D9A39;border-radius:50%"></i>Group port</span><span><i style="background:#1F6FB2;border-radius:50%"></i>Loading ports</span></div></div><div class="map-layout"><div class="map-viewport"><div class="mapbody">{% include "partials/map-network.svg" %}<div class="maplist">
+<div><b>Volgograd region</b><span>Zagotzerno · Yaryzhki · Solodchinskoye HPP · Borelskiy Mill · Bukanovskoye HPP · Oktyabrskoye HPP · Duet · Aston · SP-Bazuluk</span></div>
+<div><b>Saratov region</b><span>Arkadak · Petrovskiye Khleba</span></div>
+<div><b>Krasnodar region</b><span>Tandem · Girey</span></div>
+<div><b>Tambov and Voronezh regions</b><span>Veles · Podgorensky Elevator</span></div>
+<div><b>Rostov-on-Don</b><span>Diona — port elevator, 59,700 t</span></div>
+</div></div></div><aside class="map-side map-metrics">
+<div class="map-metric"><b>658,750 t</b><span>one-time storage capacity</span></div>
+<div class="map-metric"><b>14</b><span>elevator facilities</span></div>
+<div class="map-metric"><b>9 of 14</b><span>modern complexes commissioned in 2015–2023</span></div>
+<div class="map-metric"><b>59,700 t</b><span>Diona port elevator</span></div>
+<a class="map-link" href="#lead">All facilities <span>→</span></a>
+</aside></div></div></div></section>
+<section class="section v9-intl" id="international"><div class="wrap">
+<div class="v9-intl-head"><div><span class="eyebrow">International business</span><h2>Russian grain for global markets</h2></div><p>Direct export programs via Azov–Black Sea ports, rail and container routes.</p></div>
+<div class="v9-intl-grid"><div class="v9-products">
+<article class="v9-product"><img alt="Wheat" src="{{ root }}assets/product-wheat.webp"><div><b>Wheat</b><span>11.5% / 12.5% and contract specifications</span></div></article>
+<article class="v9-product"><img alt="Barley" src="{{ root }}assets/product-barley.webp"><div><b>Barley</b><span>Feed and export grades</span></div></article>
+<article class="v9-product"><img alt="Corn" src="{{ root }}assets/product-corn.webp"><div><b>Corn</b><span>Feed and industrial use</span></div></article>
+<article class="v9-product"><img alt="Sunflower seed" src="{{ root }}assets/product-sunflower.webp"><div><b>Sunflower seed</b><span>Oilseed programs</span></div></article>
+<article class="v9-product"><img alt="Pulses" src="{{ root }}assets/product-pulses.webp"><div><b>Pulses</b><span>Peas, chickpeas, lentils</span></div></article>
+<article class="v9-product"><img alt="Other oilseeds" src="{{ root }}assets/product-oilseeds.webp"><div><b>Other oilseeds</b><span>Flax, rapeseed, safflower, mustard</span></div></article>
+</div><aside class="v9-export-card"><div><span class="eyebrow">Execution</span><h3>Export terms</h3></div>
+<div class="v9-export-group"><span>Ports and routes</span><div class="v9-chips"><i>Novorossiysk</i><i>Tuapse</i><i>Rostov-on-Don / Azov</i><i>Astrakhan</i><i>Rail</i><i>Containers</i></div></div>
+<div class="v9-export-group"><span>Delivery terms</span><div class="v9-chips"><i>FOB</i><i>CFR</i><i>CIF</i><i>CPT</i><i>DAP</i></div></div>
+<div class="v9-export-group"><span>Payment &amp; trade finance</span><div class="v9-chips"><i>LC</i><i>SBLC</i><i>CAD / CAFD</i><i>Prepayment</i><i>Deferred payment subject to agreement</i><i>Trade finance</i></div><small>Payment structure and banking instruments are agreed for each contract, bank and counterparty.</small></div>
+<a class="btn btn--gold" data-form-mode="export" href="export.html#rfq">Request an offer <svg class="icon"><use href="#i-arrow"></use></svg></a></aside></div>
+<div class="v9-intl-foot"><span><b>1.81 mt</b> direct exports in 2023/24 season</span><span><b>35+</b> destination markets</span><a href="export.html">Export capabilities →</a></div>
+</div></section>
+<section class="section lead-section" id="lead"><div class="wrap"><div class="lead-shell"><div class="lead-copy"><span class="eyebrow">Enquiry</span><h2>Sell grain or request an export offer</h2><p class="lead">Select a current price above or enter the lot parameters manually. Your enquiry will be sent to the commercial team with the selected elevator and basis.</p><div class="benefits benefits--usp">
+<div class="benefit"><span class="benefit__icon"><svg class="icon"><use href="#i-home"></use></svg></span><div><b>14 receiving sites</b><span>Volgograd, Saratov, Voronezh and Tambov regions, Krasnodar region and a port elevator in Rostov-on-Don.</span></div></div>
+<div class="benefit"><span class="benefit__icon"><svg class="icon"><use href="#i-check"></use></svg></span><div><b>Intake up to 5,000 t per shift</b><span>Automated intake, conditioning and drying lines support peak harvest flows.</span></div></div>
+<div class="benefit"><span class="benefit__icon"><svg class="icon"><use href="#i-wheat"></use></svg></span><div><b>55 mobile laboratories</b><span>Quality is assessed on site, with results available immediately.</span></div></div>
+</div></div>
+<div class="form-card"><form class="form-body" data-form-type="supplier" data-tdzz-form="" id="leadForm" novalidate><input id="leadType" name="form_type" type="hidden" value="supplier"/><input id="selectedPrice" name="selected_price" type="hidden"/><div class="fgrid"><div class="field"><label for="name">Name / company *</label><input class="input" id="name" name="name" placeholder="John Smith" required=""/></div><div class="field"><label for="phone">Phone / WhatsApp *</label><input class="input" id="phone" name="contact" placeholder="+7 999 123-45-67" required=""/></div><div class="field"><label for="crop">Commodity *</label><select class="input" id="crop" name="commodity"><option>Wheat 12.5%</option><option>Wheat 11.5%</option><option>Barley</option><option>Corn</option><option>Sunflower seed</option><option>Peas</option><option>Chickpeas</option></select></div><div class="field"><label for="volume">Volume, tonnes *</label><input class="input" id="volume" min="20" name="volume" placeholder="200" type="number"/></div><div class="field"><label for="point">Receiving point / port</label><select class="input" id="point" name="point"><option>To be selected with a manager</option><option>Zagotzerno</option><option>Yaryzhki</option><option>Solodchinskoye</option><option>Borelskiy</option><option>Arkadak</option><option>Tandem</option><option>Novorossiysk</option><option>Rostov-on-Don / Azov</option></select></div><div class="field"><label for="region">Region / country</label><input class="input" id="region" name="region" placeholder="Volgograd region / Egypt"/></div><div class="field full"><label for="comment">Comments</label><textarea class="input" id="comment" name="comment" placeholder="Quality, readiness for shipment, preferred basis"></textarea><span class="form-hint" id="selectedHint"></span></div><div class="field full"><label class="check"><input name="privacy" required="" type="checkbox" value="accepted"/><span>I consent to the processing of my contact data and accept the <a class="privacy-link" href="privacy.html">privacy policy.</a></span></label></div><div class="field full"><div class="submit-row"><button class="btn btn--gold" type="submit">Send enquiry <svg class="icon"><use href="#i-arrow"></use></svg></button><span>The manager will receive the lot parameters, selected receiving point and basis.</span></div></div></div></form></div></div></div></section>
+</main>

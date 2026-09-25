@@ -1,0 +1,11 @@
+# результат сборки — собирается в CI, в репозитории не нужен
+dist/
+# секреты и данные, которые живут только на сервере
+static/api/config.php
+static/data/leads/*
+static/data/uploads/*
+static/data/backups/*
+!static/data/*/.htaccess
+__pycache__/
+.DS_Store
+*.zip

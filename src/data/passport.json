@@ -1,0 +1,105 @@
+{
+  "_comment": "«Оцените партию за 60 секунд». Для каждой культуры: параметры-ползунки (min/max/step/default, basis — базисная норма, dir: high = чем больше, тем лучше; low = чем меньше, тем лучше) и градации (grades) — проверяются сверху вниз, первая подходящая = результат. Пороги соответствуют требованиям к приёмке из прайса; правьте под свои спецификации.",
+  "crops": [
+    {"id": "wheat", "icon": "wheat", "label": {"ru": "Пшеница", "en": "Wheat"}, "sub": {"ru": "3–4 класс, фуражная", "en": "class 3–4, feed"},
+     "params": [
+       {"k": "protein", "label": {"ru": "Протеин", "en": "Protein"}, "unit": "%", "min": 8, "max": 16, "step": 0.1, "default": 12.1, "dir": "high", "marks": [10.5, 11.5, 12.5, 13.5]},
+       {"k": "gluten", "label": {"ru": "Клейковина", "en": "Wet gluten"}, "unit": "%", "min": 12, "max": 34, "step": 1, "default": 22, "dir": "high", "marks": [18, 23, 25]},
+       {"k": "moisture", "label": {"ru": "Влажность", "en": "Moisture"}, "unit": "%", "min": 9, "max": 20, "step": 0.1, "default": 15.2, "dir": "low", "basis": 14, "marks": [14, 16]},
+       {"k": "trash", "label": {"ru": "Сорная примесь", "en": "Foreign matter"}, "unit": "%", "min": 0, "max": 8, "step": 0.1, "default": 1.4, "dir": "low", "basis": 2, "marks": [2, 5]},
+       {"k": "natura", "label": {"ru": "Натура", "en": "Test weight"}, "unit": " г/л", "unit_en": " g/l", "min": 660, "max": 820, "step": 1, "default": 748, "dir": "high", "marks": [720, 740, 770]}
+     ],
+     "grades": [
+       {"name": {"ru": "3 класс", "en": "Class 3"}, "cond": {"protein": {"min": 12.5}, "gluten": {"min": 23}, "natura": {"min": 770}}, "ok": {"ru": "Экспортное качество — 3 класс на всех площадках сети", "en": "Export quality — class 3 at all sites"}},
+       {"name": {"ru": "4 класс", "en": "Class 4"}, "cond": {"protein": {"min": 11.5}, "gluten": {"min": 18}, "natura": {"min": 740}}, "ok": {"ru": "Проходит в 4 класс на всех 14 площадках", "en": "Qualifies as class 4 at all 14 sites"}},
+       {"name": {"ru": "4 класс · ≥10,5%", "en": "Class 4 · ≥10.5%"}, "cond": {"protein": {"min": 10.5}, "natura": {"min": 740}}, "ok": {"ru": "Принимаем как 4 класс (протеин от 10,5%)", "en": "Accepted as class 4 (protein from 10.5%)"}},
+       {"name": {"ru": "Фуражная", "en": "Feed wheat"}, "cond": {}, "ok": {"ru": "Принимаем как фуражную пшеницу", "en": "Accepted as feed wheat"}}
+     ]},
+    {"id": "barley", "icon": "barley", "label": {"ru": "Ячмень", "en": "Barley"}, "sub": {"ru": "фуражный, экспортный", "en": "feed, export"},
+     "params": [
+       {"k": "natura", "label": {"ru": "Натура", "en": "Test weight"}, "unit": " г/л", "unit_en": " g/l", "min": 520, "max": 720, "step": 1, "default": 642, "dir": "high", "marks": [600, 630, 650]},
+       {"k": "moisture", "label": {"ru": "Влажность", "en": "Moisture"}, "unit": "%", "min": 9, "max": 20, "step": 0.1, "default": 13.6, "dir": "low", "basis": 14, "marks": [14, 16]},
+       {"k": "trash", "label": {"ru": "Сорная примесь", "en": "Foreign matter"}, "unit": "%", "min": 0, "max": 8, "step": 0.1, "default": 1.8, "dir": "low", "basis": 2, "marks": [2, 5]},
+       {"k": "grain_adm", "label": {"ru": "Зерновая примесь", "en": "Grain admixture"}, "unit": "%", "min": 0, "max": 15, "step": 0.5, "default": 4, "dir": "low", "basis": 5, "marks": [5, 10]},
+       {"k": "protein", "label": {"ru": "Протеин", "en": "Protein"}, "unit": "%", "min": 8, "max": 15, "step": 0.1, "default": 11.2, "dir": "high", "marks": [10, 12]}
+     ],
+     "grades": [
+       {"name": {"ru": "Фуражный · натура ≥ 650", "en": "Feed · TW ≥ 650"}, "cond": {"natura": {"min": 650}}, "ok": {"ru": "Базисная градация фуражного ячменя", "en": "Base grade of feed barley"}},
+       {"name": {"ru": "Фуражный · натура ≥ 630", "en": "Feed · TW ≥ 630"}, "cond": {"natura": {"min": 630}}, "ok": {"ru": "Принимаем во второй градации", "en": "Accepted in the second grade"}},
+       {"name": {"ru": "По согласованию", "en": "By agreement"}, "cond": {}, "ok": {"ru": "Натура ниже 630 — цена после оценки партии", "en": "Test weight below 630 — priced after lot assessment"}}
+     ]},
+    {"id": "corn", "icon": "corn", "label": {"ru": "Кукуруза", "en": "Corn"}, "sub": {"ru": "с октября, сушим", "en": "from October, drying available"},
+     "params": [
+       {"k": "moisture", "label": {"ru": "Влажность", "en": "Moisture"}, "unit": "%", "min": 10, "max": 30, "step": 0.1, "default": 15.5, "dir": "low", "basis": 14, "marks": [14, 16, 18]},
+       {"k": "trash", "label": {"ru": "Сорная примесь", "en": "Foreign matter"}, "unit": "%", "min": 0, "max": 8, "step": 0.1, "default": 1.5, "dir": "low", "basis": 2, "marks": [2, 5]},
+       {"k": "grain_adm", "label": {"ru": "Зерновая примесь", "en": "Grain admixture"}, "unit": "%", "min": 0, "max": 20, "step": 0.5, "default": 5, "dir": "low", "basis": 5, "marks": [5, 10]},
+       {"k": "broken", "label": {"ru": "Битые / повреждённые", "en": "Broken / damaged"}, "unit": "%", "min": 0, "max": 15, "step": 0.5, "default": 3, "dir": "low", "basis": 5, "marks": [5, 10]},
+       {"k": "natura", "label": {"ru": "Натура", "en": "Test weight"}, "unit": " г/л", "unit_en": " g/l", "min": 600, "max": 800, "step": 1, "default": 720, "dir": "high", "marks": [680, 720]}
+     ],
+     "grades": [
+       {"name": {"ru": "Базис", "en": "Base"}, "cond": {"moisture": {"max": 14}, "trash": {"max": 2}}, "ok": {"ru": "Сухая кондиционная кукуруза — базисная цена", "en": "Dry, sound corn — base price"}},
+       {"name": {"ru": "Влажность 14,1–16%", "en": "Moisture 14.1–16%"}, "cond": {"moisture": {"max": 16}}, "ok": {"ru": "Принимаем с сушкой — дисконт за влагу", "en": "Accepted with drying — moisture discount"}},
+       {"name": {"ru": "Влажность 16,1–18%", "en": "Moisture 16.1–18%"}, "cond": {"moisture": {"max": 18}}, "ok": {"ru": "Принимаем с сушкой — повышенный дисконт", "en": "Accepted with drying — higher discount"}},
+       {"name": {"ru": "По согласованию", "en": "By agreement"}, "cond": {}, "ok": {"ru": "Влажность выше 18% — приёмка и цена по согласованию с площадкой", "en": "Moisture above 18% — intake and price agreed with the site"}}
+     ]},
+    {"id": "sunflower", "icon": "sunflower", "label": {"ru": "Подсолнечник", "en": "Sunflower seed"}, "sub": {"ru": "масличность от 44%", "en": "oil content from 44%"},
+     "params": [
+       {"k": "oil", "label": {"ru": "Масличность", "en": "Oil content"}, "unit": "%", "min": 36, "max": 56, "step": 0.1, "default": 47.5, "dir": "high", "marks": [44, 46, 48, 50]},
+       {"k": "moisture", "label": {"ru": "Влажность", "en": "Moisture"}, "unit": "%", "min": 4, "max": 16, "step": 0.1, "default": 7.4, "dir": "low", "basis": 8, "marks": [8, 12]},
+       {"k": "trash", "label": {"ru": "Сорная примесь", "en": "Foreign matter"}, "unit": "%", "min": 0, "max": 10, "step": 0.1, "default": 1.6, "dir": "low", "basis": 2, "marks": [2, 5]},
+       {"k": "oil_adm", "label": {"ru": "Масличная примесь", "en": "Oil admixture"}, "unit": "%", "min": 0, "max": 15, "step": 0.5, "default": 4, "dir": "low", "basis": 5, "marks": [5, 10]},
+       {"k": "acid", "label": {"ru": "Кислотное число", "en": "Acid value"}, "unit": " мг KOH/г", "unit_en": " mg KOH/g", "min": 0, "max": 6, "step": 0.1, "default": 1.4, "dir": "low", "basis": 2, "marks": [2, 3.5]}
+     ],
+     "grades": [
+       {"name": {"ru": "Масличность ≥ 50%", "en": "Oil ≥ 50%"}, "cond": {"oil": {"min": 50}}, "ok": {"ru": "Высшая градация по масличности", "en": "Top oil-content grade"}},
+       {"name": {"ru": "Масличность 48–49,9%", "en": "Oil 48–49.9%"}, "cond": {"oil": {"min": 48}}, "ok": {"ru": "Вторая градация по масличности", "en": "Second oil-content grade"}},
+       {"name": {"ru": "Масличность 46–47,9%", "en": "Oil 46–47.9%"}, "cond": {"oil": {"min": 46}}, "ok": {"ru": "Третья градация по масличности", "en": "Third oil-content grade"}},
+       {"name": {"ru": "Масличность 44–45,9%", "en": "Oil 44–45.9%"}, "cond": {"oil": {"min": 44}}, "ok": {"ru": "Базовая градация — принимаем", "en": "Base grade — accepted"}},
+       {"name": {"ru": "По согласованию", "en": "By agreement"}, "cond": {}, "ok": {"ru": "Масличность ниже 44% — цена после лабораторного анализа", "en": "Oil below 44% — priced after lab analysis"}}
+     ]},
+    {"id": "rapeseed", "icon": "rapeseed", "label": {"ru": "Рапс", "en": "Rapeseed"}, "sub": {"ru": "масличность от 40%", "en": "oil content from 40%"},
+     "params": [
+       {"k": "oil", "label": {"ru": "Масличность", "en": "Oil content"}, "unit": "%", "min": 34, "max": 50, "step": 0.1, "default": 42.5, "dir": "high", "marks": [40, 42, 45]},
+       {"k": "moisture", "label": {"ru": "Влажность", "en": "Moisture"}, "unit": "%", "min": 4, "max": 15, "step": 0.1, "default": 7.2, "dir": "low", "basis": 8, "marks": [8, 10]},
+       {"k": "trash", "label": {"ru": "Сорная примесь", "en": "Foreign matter"}, "unit": "%", "min": 0, "max": 10, "step": 0.1, "default": 1.5, "dir": "low", "basis": 2, "marks": [2, 5]},
+       {"k": "glucos", "label": {"ru": "Глюкозинолаты", "en": "Glucosinolates"}, "unit": " мкмоль/г", "unit_en": " µmol/g", "min": 5, "max": 60, "step": 1, "default": 18, "dir": "low", "basis": 25, "marks": [25, 35]},
+       {"k": "erucic", "label": {"ru": "Эруковая кислота", "en": "Erucic acid"}, "unit": "%", "min": 0, "max": 10, "step": 0.1, "default": 0.8, "dir": "low", "basis": 2, "marks": [2, 5]}
+     ],
+     "grades": [
+       {"name": {"ru": "Масличность ≥ 45%", "en": "Oil ≥ 45%"}, "cond": {"oil": {"min": 45}, "glucos": {"max": 25}, "erucic": {"max": 2}}, "ok": {"ru": "Высшая градация, соответствует «00»-типу", "en": "Top grade, double-low (00) type"}},
+       {"name": {"ru": "Масличность 42–44,9%", "en": "Oil 42–44.9%"}, "cond": {"oil": {"min": 42}, "glucos": {"max": 25}, "erucic": {"max": 2}}, "ok": {"ru": "Базисная градация — принимаем", "en": "Base grade — accepted"}},
+       {"name": {"ru": "Масличность 40–41,9%", "en": "Oil 40–41.9%"}, "cond": {"oil": {"min": 40}, "glucos": {"max": 25}, "erucic": {"max": 2}}, "ok": {"ru": "Принимаем с дисконтом за масличность", "en": "Accepted with an oil-content discount"}},
+       {"name": {"ru": "По согласованию", "en": "By agreement"}, "cond": {}, "ok": {"ru": "Вне спецификации (масличность, глюкозинолаты или эруковая кислота) — цена после анализа", "en": "Out of specification — priced after analysis"}}
+     ]},
+    {"id": "pulses", "icon": "pulses", "label": {"ru": "Горох · нут", "en": "Peas · chickpeas"}, "sub": {"ru": "по калибровке", "en": "by calibration"},
+     "params": [
+       {"k": "moisture", "label": {"ru": "Влажность", "en": "Moisture"}, "unit": "%", "min": 8, "max": 20, "step": 0.1, "default": 13.2, "dir": "low", "basis": 14, "marks": [14, 16]},
+       {"k": "trash", "label": {"ru": "Сорная примесь", "en": "Foreign matter"}, "unit": "%", "min": 0, "max": 8, "step": 0.1, "default": 1.2, "dir": "low", "basis": 2, "marks": [2, 5]},
+       {"k": "broken", "label": {"ru": "Битые / колотые", "en": "Split / broken"}, "unit": "%", "min": 0, "max": 20, "step": 0.5, "default": 4, "dir": "low", "basis": 5, "marks": [5, 10]},
+       {"k": "damaged", "label": {"ru": "Повреждённые зерновкой", "en": "Weevil-damaged"}, "unit": "%", "min": 0, "max": 10, "step": 0.5, "default": 1, "dir": "low", "basis": 2, "marks": [2, 5]},
+       {"k": "size8", "label": {"ru": "Нут: калибр 8+ мм", "en": "Chickpea: 8+ mm"}, "unit": "%", "min": 0, "max": 100, "step": 5, "default": 70, "dir": "high", "marks": [50, 70, 90]}
+     ],
+     "grades": [
+       {"name": {"ru": "Продовольственный", "en": "Food grade"}, "cond": {"moisture": {"max": 14}, "trash": {"max": 2}, "broken": {"max": 5}, "damaged": {"max": 2}}, "ok": {"ru": "Продовольственная спецификация — базисная цена", "en": "Food specification — base price"}},
+       {"name": {"ru": "Фуражный", "en": "Feed grade"}, "cond": {"moisture": {"max": 16}}, "ok": {"ru": "Принимаем как фуражный — цена по градации", "en": "Accepted as feed — graded price"}},
+       {"name": {"ru": "По согласованию", "en": "By agreement"}, "cond": {}, "ok": {"ru": "Влажность выше 16% — приёмка по согласованию", "en": "Moisture above 16% — intake by agreement"}}
+     ]},
+    {"id": "flax", "icon": "oil", "label": {"ru": "Лён · сафлор", "en": "Flax · safflower"}, "sub": {"ru": "по спецификации", "en": "to specification"},
+     "params": [
+       {"k": "oil", "label": {"ru": "Масличность", "en": "Oil content"}, "unit": "%", "min": 30, "max": 50, "step": 0.1, "default": 41, "dir": "high", "marks": [38, 40, 44]},
+       {"k": "moisture", "label": {"ru": "Влажность", "en": "Moisture"}, "unit": "%", "min": 4, "max": 15, "step": 0.1, "default": 8.5, "dir": "low", "basis": 9, "marks": [9, 12]},
+       {"k": "trash", "label": {"ru": "Сорная примесь", "en": "Foreign matter"}, "unit": "%", "min": 0, "max": 10, "step": 0.1, "default": 2.1, "dir": "low", "basis": 3, "marks": [3, 6]},
+       {"k": "oil_adm", "label": {"ru": "Масличная примесь", "en": "Oil admixture"}, "unit": "%", "min": 0, "max": 15, "step": 0.5, "default": 3, "dir": "low", "basis": 5, "marks": [5, 10]}
+     ],
+     "grades": [
+       {"name": {"ru": "Масличность ≥ 40%", "en": "Oil ≥ 40%"}, "cond": {"oil": {"min": 40}, "moisture": {"max": 9}}, "ok": {"ru": "Базисная спецификация — принимаем", "en": "Base specification — accepted"}},
+       {"name": {"ru": "Масличность 38–39,9%", "en": "Oil 38–39.9%"}, "cond": {"oil": {"min": 38}}, "ok": {"ru": "Принимаем с дисконтом за масличность", "en": "Accepted with an oil-content discount"}},
+       {"name": {"ru": "По согласованию", "en": "By agreement"}, "cond": {}, "ok": {"ru": "Вне базовой спецификации — цена после анализа", "en": "Out of base specification — priced after analysis"}}
+     ]}
+  ],
+  "notes": {
+    "moisture": {"ru": "подсушите до {basis}% — уйдёт дисконт за сушку", "en": "dry to {basis}% to remove the drying discount"},
+    "trash": {"ru": "подработайте до {basis}% — уйдёт дисконт за очистку", "en": "clean to {basis}% to remove the cleaning discount"},
+    "default": {"ru": "норма — не более {basis}{unit}", "en": "limit — max {basis}{unit}"}
+  }
+}
